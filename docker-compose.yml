@@ -1,7 +1,10 @@
-version: '3'
+version: "3"
 
 services:
-    web-node-js:
-        image: phuritmurin/react-find-objects:v0.1
-        ports:
-            - "3000:3000"
+  web-node-js:
+    image: phuritmurin/react-find-objects
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app

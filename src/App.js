@@ -26,7 +26,7 @@ export default function DenseAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit">
-            Photos
+            มัชเก่ง ซินกาก EiEi
           </Typography>
         </Toolbar>
       </AppBar>
