@@ -2,8 +2,7 @@ FROM node:alpine
 
 MAINTAINER phurit.duan@bumail.net
 
-RUN apt-get update && apt-get dist-upgrade -y \
-    && rm -rf
+RUN apt-get update && apt-get dist-upgrade -y 
 
 WORKDIR /app
 
