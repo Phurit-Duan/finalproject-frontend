@@ -3,7 +3,7 @@ FROM node:alpine
 MAINTAINER phurit.duan@bumail.net
 
 RUN apt-get update && apt-get dist-upgrade -y \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf
 
 WORKDIR /app
 
