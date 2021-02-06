@@ -26,7 +26,7 @@ export default function DenseAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit">
-            EiEi
+            hi
           </Typography>
         </Toolbar>
       </AppBar>
