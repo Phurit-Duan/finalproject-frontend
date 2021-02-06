@@ -2,11 +2,11 @@ FROM node:alpine
 
 MAINTAINER phurit.duan@bumail.net
 
+RUN yarn install
+
 WORKDIR /app
 
 COPY package.json /app
-
-RUN yarn install
 
 COPY . /app
 
