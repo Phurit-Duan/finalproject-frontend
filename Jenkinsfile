@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        image = "phuritmurin/react-find-objects:v0.1"
+        image = "atisak/demo-nodejs"
         registry = "docker.io"
     }
 
@@ -69,3 +69,4 @@ pipeline {
         
     }
 }
+
