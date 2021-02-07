@@ -16,4 +16,6 @@ COPY . /app
 
 RUN yarn install
 
+RUN yarn install react-scripts -g 
+
 CMD ["yarn", "start"]
