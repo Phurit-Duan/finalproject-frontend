@@ -17,6 +17,14 @@ pipeline {
             }
         }
 
+
+        stage('Prepare') {
+            steps {
+                sh "npm install -g yarn"
+                sh "yarn install"
+            }
+        }
+
         stage('Print Environment') {
             steps {
                 sh('ls -al')
