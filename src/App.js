@@ -26,7 +26,7 @@ export default function DenseAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit">
-            hi Xin Much Peem
+            hi Xin Much Peem test
           </Typography>
         </Toolbar>
       </AppBar>
