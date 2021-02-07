@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        image = "phuritmurin/react-find-objects"
+        image = "phuritmurin/react-find-objects:latest"
         registry = "docker.io"
     }
 
@@ -30,17 +30,17 @@ pipeline {
         //     }
         // }
         
-        // stage('Build docker image') {
-        //     steps {
-        //         script {
-        //             docker.withRegistry('', 'dockerhub') {
-        //                 def slackImage = docker.build("${env.image}:${env.BUILD_ID}")
-        //                 slackImage.push()
-        //                 slackImage.push('latest')
-        //             }
-        //         }
-        //     }
-        // }
+        stage('Build docker image') {
+            steps {
+                script {
+                    docker.withRegistry('', 'dockerhub') {
+                        def slackImage = docker.build("${env.image}:${BUILD_NUMBER}")
+                        slackImage.push()
+                        slackImage.push('latest')
+                    }
+                }
+            }
+        }
 
         stage('Deployment'){
             steps {
