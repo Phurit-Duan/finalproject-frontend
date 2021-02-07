@@ -44,8 +44,8 @@ pipeline {
 
         stage('Deployment'){
             steps {
-                sh "docker system prune"
                 sh "docker-compose up -d"
+                sh "docker system prune -f --all"
             }
             
         }
