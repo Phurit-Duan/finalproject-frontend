@@ -2,10 +2,6 @@ version: "3"
 
 services:
   web-react:
-    container_name: react-beta
     image: phuritmurin/react-find-objects:latest
     ports:
       - "3000:3000"
-    volumes:
-      - /app/node_modules
-      - .:/app
