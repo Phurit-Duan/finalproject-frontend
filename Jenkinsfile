@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        image = "phuritmurin/react-find-objects:latest"
+        image = "phuritmurin/react-find-objects"
         registry = "docker.io"
     }
 
