@@ -1,35 +1,14 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
+import Home from './components/Home'
+import AboutUs from './components/AboutUs'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-}));
-
-export default function DenseAppBar() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" color="inherit">
-            EiEi
-          </Typography>
-        </Toolbar>
-      </AppBar>
+function App ()
+{
+  return(
+    <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/AboutUs" component={AboutUs} />
     </div>
   );
 }
+export default App;

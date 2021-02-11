@@ -1,0 +1,68 @@
+.Container{
+    background-color: #FDF6ED;
+}
+.MenuImage{
+    width: 99%;
+    padding-top: 1%;
+    float : right;
+    background-color: #FDF6ED;
+}
+
+.MenuBar{
+    background-color: #FDF6ED;
+}
+
+.MenuHome{
+    position: absolute;
+    top: 2vw;
+    left : 30vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 2vw;
+    color: #E57A44;
+    cursor: pointer;
+}
+
+.MenuAboutUs{
+    position: absolute;
+    top: 2vw;
+    left : 45vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;
+
+}
+
+.MenuContact{
+    position: absolute;
+    top: 2vw;
+    left : 63vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;
+} 
+.Home_Text{
+    width: 70%;
+    display: block;
+    padding-top: 2.5%;
+    padding-bottom: 3%;  
+    margin: auto;
+}
+.HomeButton_D{
+    position: absolute;
+    width: 30%;
+    display: block;
+    margin-left : 16%; 
+    cursor: pointer;
+}
+.HomeButton_C{
+    position: absolute;
+    width: 30%;
+    display: block;
+    margin-left : 54%; 
+    cursor: pointer;
+}
