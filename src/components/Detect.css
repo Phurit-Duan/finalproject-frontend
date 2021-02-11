@@ -1,0 +1,30 @@
+.Container{
+    background-color: #FDF6ED;
+}
+.DetectBG{
+    padding-top: 2%;
+    display: block; 
+    width: 80%;
+    margin: auto;
+}
+.DetectImage{
+    position: absolute;
+    display: block; 
+    width: 25%;
+    top: 25vw;
+    left : 36.5vw;
+}
+.DetectButton_U{
+    position: absolute;
+    display: block; 
+    width: 25%;
+    top: 45vw;
+    left : 20vw;
+}
+.DetectButton_N{
+    position: absolute;
+    display: block; 
+    width: 25%;
+    top: 45vw;
+    right : 20vw;
+}

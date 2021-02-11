@@ -13,14 +13,14 @@
     background-color: #FDF6ED;
 }
 
-.P-MenuHome{
+.MenuHome{
     position: absolute;
     top: 2vw;
     left : 30vw;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
     font-size: 2vw;
-    color: #E57A44;
+    color: #621708;
     cursor: pointer;
 }
 
@@ -36,35 +36,19 @@
 
 }
 
-.MenuContact{
+.P-MenuContact{
     position: absolute;
     top: 2vw;
     left : 63vw;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
     font-size: 2vw;
-    color: #621708;
+    color: #E57A44;
     cursor: pointer;
 } 
-.HomeText{
-    width: 70%;
-    display: block;
+.ContactPage{
     padding-top: 2%;
-    padding-bottom: 3%;  
+    display: block; 
+    width: 80%;
     margin: auto;
-}
-
-.HomeButton_D{
-    position: absolute;
-    width: 25%;
-    display: block;
-    left: 20%;
-    cursor: pointer;
-}
-.HomeButton_C{
-    position: absolute;
-    width: 25%;
-    display: block;
-    right: 20%;
-    cursor: pointer;
 }

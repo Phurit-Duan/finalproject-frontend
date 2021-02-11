@@ -4,6 +4,7 @@
 .MenuImage{
     width: 99%;
     padding-top: 1%;
+    padding-bottom: 1%;
     float : right;
     background-color: #FDF6ED;
 }
@@ -23,7 +24,7 @@
     cursor: pointer;
 }
 
-.MenuAboutUs{
+.P-MenuAboutUs{
     position: absolute;
     top: 2vw;
     left : 45vw;
@@ -45,24 +46,15 @@
     color: #621708;
     cursor: pointer;
 } 
-.Home_Text{
-    width: 70%;
-    display: block;
-    padding-top: 2.5%;
-    padding-bottom: 3%;  
+.AboutImage{
+    padding-top: 2%;
+    display: block; 
+    width: 80%;
     margin: auto;
 }
-.HomeButton_D{
-    position: absolute;
-    width: 30%;
+.AboutText{ 
+    width: 80%;
     display: block;
-    margin-left : 16%; 
-    cursor: pointer;
-}
-.HomeButton_C{
-    position: absolute;
-    width: 30%;
-    display: block;
-    margin-left : 54%; 
-    cursor: pointer;
+    padding-top: 2%;
+    margin: auto;  
 }
