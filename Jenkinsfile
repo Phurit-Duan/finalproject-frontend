@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        image = "phuritmurin/react-find-objects:v0.1"
+        image = "phuritmurin/react-find-objects"
         registry = "docker.io"
     }
 
@@ -45,6 +45,7 @@ pipeline {
         stage('Deployment'){
             steps {
                 sh "docker-compose up -d"
+                sh "docker system prune -f --all"
             }
             
         }
@@ -69,3 +70,4 @@ pipeline {
         
     }
 }
+
