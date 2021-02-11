@@ -2,7 +2,6 @@ version: "3"
 
 services:
   web-node-js:
-    container_name: react-web
     image: phuritmurin/react-find-objects
     ports:
       - "3000:3000"
