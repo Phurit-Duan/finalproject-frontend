@@ -14,7 +14,7 @@ function Home() {
     <div className="Container">
       <div className="MenuBar">
         <img src={MenuImage} className="MenuImage" alt="" />
-        <div className="P-MenuHome">Home</div>
+        <div className="P-MenuHome">Index</div>
         <Link to="/About-us">
             <div className="MenuAboutUs">About Us</div>
         </Link>
