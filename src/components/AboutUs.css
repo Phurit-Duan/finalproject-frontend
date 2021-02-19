@@ -1,29 +1,6 @@
 .Container{
     background-color: #FDF6ED;
 }
-.MenuImage{
-    width: 99%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    float : right;
-    background-color: #FDF6ED;
-}
-
-.MenuBar{
-    background-color: #FDF6ED;
-}
-
-.MenuHome{
-    position: absolute;
-    top: 2vw;
-    left : 30vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
-}
-
 .P-MenuAboutUs{
     position: absolute;
     top: 2vw;
@@ -35,19 +12,8 @@
     cursor: pointer;
 
 }
-
-.MenuContact{
-    position: absolute;
-    top: 2vw;
-    left : 63vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
-} 
 .AboutImage{
-    padding-top: 2%;
+
     display: block; 
     width: 80%;
     margin: auto;
@@ -56,5 +22,6 @@
     width: 80%;
     display: block;
     padding-top: 2%;
-    margin: auto;  
+    margin: auto; 
+    padding-bottom: 3%; 
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import  './Contact.css';
+import "./MenuBar.css";
+import "./Contact.css";
 import MenuImage from './images/Menu.png';
 import ContactPage from './images/Contact-Page.png';
 

@@ -2,29 +2,37 @@
     background-color: #FDF6ED;
 }
 .DetectBG{
-    padding-top: 2%;
     display: block; 
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 .DetectImage{
     position: absolute;
     display: block; 
-    width: 25%;
-    top: 25vw;
-    left : 36.5vw;
+    width: 20%;
+    top: 28vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .DetectButton_U{
     position: absolute;
     display: block; 
-    width: 25%;
-    top: 45vw;
-    left : 20vw;
+    width: 20%;
+    top: 39vw;
+    left : 25vw;
 }
 .DetectButton_N{
     position: absolute;
     display: block; 
-    width: 25%;
-    top: 45vw;
-    right : 20vw;
+    width: 20%;
+    top: 39vw;
+    right : 25vw;
+}
+.ImagePreview{
+    height: 16vw;
+    position: absolute;
+    display: block; 
+    top: 28vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
