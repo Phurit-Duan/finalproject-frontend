@@ -3,27 +3,120 @@
 }
 .P-MenuHome{
     position: absolute;
-    top: 2vw;
-    left : 30vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 35vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #E57A44;
-    cursor: pointer;
+    cursor: default;
 }
-.HomeButton_D{
-    padding-top: 20%;
+.HomeApplication{
     position: absolute;
-    width: 25%;
-    display: block;
-    left: 20%;
-    cursor: pointer;
+    top: 18vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+
 }
-.HomeButton_C{
-    padding-top: 20%;
+.AppLine{
     position: absolute;
-    width: 25%;
-    display: block;
-    right: 20%;
-    cursor: pointer;
+    top: 20.5vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    width: 8vw;
+    color: #621708;
+    border-bottom: #E57A44;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+}
+.ClassifyLogo{
+    position: absolute;
+    width: 6vw;
+    background: rgb(242,204,143);
+    background: linear-gradient(225deg, rgba(242,204,143,1) 40%, rgba(235,137,88,1) 100%);
+    padding: 0.5vw 0.5vw 0.5vw;
+    border-style: hidden;
+    border-radius: 2vw;
+    top: 28vw;
+    left: 25vw;
+    transform: translate(-50%, -50%);
+    cursor: pointer;  
+}
+.ClassifyLogo:hover{
+    background: rgb(242,204,143);
+    background: linear-gradient(45deg, rgba(242,204,143,1) 40%, rgba(237,148,103,1) 100%);
+}
+.DetectLogo{
+    position: absolute;
+    width: 6vw;
+    background: rgb(242,204,143);
+    background: linear-gradient(225deg, rgba(242,204,143,1) 40%, rgba(235,137,88,1) 100%);
+    padding: 0.5vw 0.5vw 0.5vw;
+    border-style: hidden;
+    border-radius: 2vw;
+    top: 28vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    cursor: pointer;  
+}
+.DetectLogo:hover{
+    background: rgb(242,204,143);
+    background: linear-gradient(45deg, rgba(242,204,143,1) 40%, rgba(237,148,103,1) 100%);
+}
+.ChatbotLogo{
+    position: absolute;
+    width: 6vw;
+    background: rgb(242,204,143);
+    background: linear-gradient(225deg, rgba(242,204,143,1) 40%, rgba(235,137,88,1) 100%);
+    padding: 0.5vw 0.5vw 0.5vw;
+    border-style: hidden;
+    border-radius: 2vw;
+    top: 28vw;
+    left: 75vw;
+    transform: translate(-50%, -50%);
+    cursor: pointer;  
+}
+.ChatbotLogo:hover{
+    background: rgb(242,204,143);
+    background: linear-gradient(45deg, rgba(242,204,143,1) 40%, rgba(237,148,103,1) 100%);
+}
+.HomeClassify{
+    position: absolute;
+    top: 34vw;
+    left : 25vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;  
+}
+
+.HomeDetect{
+    position: absolute;
+    top: 34vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;  
+}
+
+.HomeChatbot{
+    position: absolute;
+    top: 34vw;
+    left : 75vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;  
 }

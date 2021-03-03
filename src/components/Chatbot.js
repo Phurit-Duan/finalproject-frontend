@@ -1,13 +1,26 @@
-import React from "react";
+import Chatbot from "react-chatbot-kit";
 
 import "./Chatbot.css";
-import ChatbotPage from './images/Chat-Page.png';
 
-function Chatbot (){
+import MenuBar from "./MenuBar";
+import config from "./chatbot/config";
+import ActionProvider from "./chatbot/ActionProvider";
+import MessageParser from "./chatbot/MessageParser";
+
+
+function Chatbots (){
     return(
         <div>
-            <img src={ChatbotPage} className="ChatbotPage" alt=""/>
+            <div className="ChatbotFooter"></div>
+            <MenuBar/>
+            <label className="ChatbotPage"></label>
+            <h1 className="ChatbotHead">Chatbot</h1>
+            <Chatbot
+                config={config}
+                actionProvider={ActionProvider}
+                messageParser={MessageParser}
+            /> 
         </div>
     );
 }
-export default Chatbot;
+export default Chatbots;

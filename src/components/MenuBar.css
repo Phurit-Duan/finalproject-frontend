@@ -1,39 +1,84 @@
 .MenuImage{
-    width: 99%;
-    padding-top: 1%;
-    float : right;
-    background-color: #FDF6ED;
+    position: absolute;
+    width: 20vw;
+    top: 1vw;
+    left: 1vw;
+
 }
 .MenuBar{
-    background-color: #FDF6ED;
+    background-color: #f2cc8f;
+    position: absolute;
+    width: 95vw;
+    height: 4.5vw;
+    top: 1vw;
+    right: 0vw;
+    border-top-left-radius: 2vw;
 }
 .MenuHome{
     position: absolute;
-    top: 2vw;
-    left : 30vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 35vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #621708;
     cursor: pointer;
+}
+.MenuHome:hover{
+    position: absolute;
+    top: 3.2vw;
+    left : 35vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .MenuAboutUs{
     position: absolute;
-    top: 2vw;
-    left : 45vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #621708;
     cursor: pointer;
 }
-.MenuContact{
+.MenuAboutUs:hover{
     position: absolute;
-    top: 2vw;
-    left : 63vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #621708;
     cursor: pointer;
+    text-decoration: underline;
+}
+.MenuContact{
+    position: absolute;
+    top: 3.2vw;
+    left : 66vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;
+} 
+.MenuContact:hover{
+    position: absolute;
+    top: 3.2vw;
+    left : 66vw;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #621708;
+    cursor: pointer;
+    text-decoration: underline;
 } 

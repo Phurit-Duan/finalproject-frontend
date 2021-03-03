@@ -2,15 +2,15 @@ import axios from 'axios';
 import React, { useState } from "react";
 
 import "./Detect.css";
-import MenuBar from "./MenuBar";
 import DetectImage from "./images/Detect-Image.png";
+import MenuBar from "./MenuBar";
 import DetectButton_U1 from "./images/Detect-Button-U1.png";
 import DetectButton_U2 from "./images/Detect-Button-U2.png";
 import DetectButton_N1 from "./images/Detect-Button-N1.png";
 import DetectButton_N2 from "./images/Detect-Button-N2.png";
 import LoadingImage from "./images/Magnify.svg"
 
-function Detect (){
+function Classify (){
     const [image, setImage] = useState({ preview: "", raw: "" ,name: ""});
     const [showImage, setShowImage] = React.useState(true)
     const [showButton, setShowButton] = React.useState(true)
@@ -41,7 +41,7 @@ function Detect (){
             console.log(res.data.result); 
             setShowButton(false);
             setShowLoading(false);
-            setShowResult({ text: "Result = " + res.data.result, open: true})
+            setShowResult({ text: "Result = " + res.data.result[0,0], open: true})
         })
         .catch((error) => {
             setShowButton(false);
@@ -76,7 +76,7 @@ function Detect (){
             <MenuBar/>
             <div className="DetectFooter"></div>
             <label className="DetectPage"></label>
-            <h1 className="DetectHead">Object Detection</h1>
+            <h1 className="DetectHead">Object Classification</h1>
             { showButton ? <ShowButton /> : null }
             { showImage ? <DetectImages /> : null }
             <input 
@@ -95,4 +95,4 @@ function Detect (){
         </div>
     );
 }
-export default Detect;
+export default Classify;

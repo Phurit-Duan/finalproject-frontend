@@ -3,18 +3,23 @@
 }
 .P-MenuContact{
     position: absolute;
-    top: 2vw;
-    left : 63vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 66vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #E57A44;
-    cursor: pointer;
+    cursor: default;
+    
 } 
 .ContactPage{
-    padding-top: 2%;
+    position: absolute;
     display: block; 
-    width: 80%;
+    width: 70%;
     margin: auto;
-    padding-bottom: 2%;
+    top: 30vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    padding-bottom: 2vw;
 }

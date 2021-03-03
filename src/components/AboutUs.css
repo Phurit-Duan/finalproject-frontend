@@ -3,25 +3,29 @@
 }
 .P-MenuAboutUs{
     position: absolute;
-    top: 2vw;
-    left : 45vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #E57A44;
     cursor: pointer;
 
 }
 .AboutImage{
-
+    position: absolute;
     display: block; 
     width: 80%;
-    margin: auto;
+    top: 25vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
 }
 .AboutText{ 
+    position: absolute;
     width: 80%;
     display: block;
-    padding-top: 2%;
-    margin: auto; 
-    padding-bottom: 3%; 
+    top: 43vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
 }

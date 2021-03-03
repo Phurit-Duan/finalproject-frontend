@@ -10,16 +10,15 @@ function AboutUs ()
 {
     return(
         <div className="Container">
-            <div className="MenuBar">
-                <img src={MenuImage} className="MenuImage" alt="" />
-                <Link to="/">
-                    <div className="MenuHome">Home</div>
-                </Link>
+            <label className="MenuBar"></label>
+            <img src={MenuImage} className="MenuImage" alt="" />
+            <Link to="/">
+                <div className="MenuHome">Home</div>
+            </Link>
                 <div className="P-MenuAboutUs">About Us</div>
-                <Link to="/Contact">
-                    <div className="MenuContact">Contact</div>
-                </Link>
-            </div>
+            <Link to="/Contact">
+                <div className="MenuContact">Contact</div>
+            </Link>
             <img src={AboutImage} className="AboutImage" alt=""/>
             <img src={AboutText} className="AboutText" alt=""/>
         </div>

@@ -2,6 +2,9 @@ import {Route} from 'react-router-dom';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import Detect from "./components/Detect";
+import Classify from "./components/Classify";
+import Chatbots from "./components/Chatbot";
 
 
 function App ()
@@ -11,6 +14,9 @@ function App ()
         <Route exact path="/" component={Home} />
         <Route path="/About-us" component={AboutUs} />
         <Route path="/Contact" component={Contact} />
+        <Route path="/NLP-Chatbot" component={Chatbots} />
+        <Route path="/Object-Classification" component={Classify} />
+        <Route path="/Object-Detection" component={Detect} />
     </div>
   );
 }
