@@ -1,15 +1,33 @@
-import React from "react";
-
+import Chatbot from "react-chatbot-kit";
 import "./Chatbot.css";
-import MenuBar from "./MenuBar";
-import ChatbotPage from './images/Chat-Page.png';
 
-function Chatbot (){
+import MenuBar from "./MenuBar";
+import config from "./chatbot/config";
+import ActionProvider from "./chatbot/ActionProvider";
+import MessageParser from "./chatbot/MessageParser";
+
+
+function Chatbots (){
+
+    const validator = (input) => {
+        if (input.length > 3) return true;
+        return false
+    }
+
     return(
-        <div className="Container">
+        <div>
+            <div className="ChatbotFooter"></div>
             <MenuBar/>
-            <img src={ChatbotPage} className="ChatbotPage" alt=""/>
+            <label className="ChatbotPage"></label>
+            <h1 className="ChatbotHead">Chatbot</h1>
+            <Chatbot
+                config={config}
+                actionProvider={ActionProvider}
+                messageParser={MessageParser}
+                validator={validator}
+            /> 
         </div>
+        
     );
 }
-export default Chatbot;
+export default Chatbots;

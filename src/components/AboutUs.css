@@ -1,60 +1,31 @@
 .Container{
     background-color: #FDF6ED;
 }
-.MenuImage{
-    width: 99%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    float : right;
-    background-color: #FDF6ED;
-}
-
-.MenuBar{
-    background-color: #FDF6ED;
-}
-
-.MenuHome{
-    position: absolute;
-    top: 2vw;
-    left : 30vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
-}
-
 .P-MenuAboutUs{
     position: absolute;
-    top: 2vw;
-    left : 45vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
+    top: 3.2vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Pridi', serif;
+    font-weight: 700;
     font-size: 2vw;
     color: #E57A44;
     cursor: pointer;
 
 }
-
-.MenuContact{
-    position: absolute;
-    top: 2vw;
-    left : 63vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
-} 
 .AboutImage{
-    padding-top: 2%;
+    position: absolute;
     display: block; 
     width: 80%;
-    margin: auto;
+    top: 25vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
 }
 .AboutText{ 
+    position: absolute;
     width: 80%;
     display: block;
-    padding-top: 2%;
-    margin: auto;  
+    top: 43vw;
+    left : 50vw;
+    transform: translate(-50%, -50%);
 }

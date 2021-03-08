@@ -5,7 +5,8 @@ import './MenuBar.css';
 
 function MenuBar() {
     return (
-        <div className="MenuBar">
+        <div className="Container">
+            <label className="MenuBar"></label>
             <img src={MenuImage} className="MenuImage" alt="MenuImage" />
             <Link to="/">
                 <div className="MenuHome">Home</div>
