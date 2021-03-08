@@ -1,13 +1,13 @@
 import axios from 'axios';
 import React, { useState } from "react";
 
-import "./Detect.css";
-import DetectImage from "./images/Detect-Image.png";
+import "./Object.css";
+import ObjectImage from "./images/Object-Image.png";
 import MenuBar from "./MenuBar";
-import DetectButton_U1 from "./images/Detect-Button-U1.png";
-import DetectButton_U2 from "./images/Detect-Button-U2.png";
-import DetectButton_N1 from "./images/Detect-Button-N1.png";
-import DetectButton_N2 from "./images/Detect-Button-N2.png";
+import DetectButton_U1 from "./images/Object-Button-U1.png";
+import DetectButton_U2 from "./images/Object-Button-U2.png";
+import DetectButton_N1 from "./images/Object-Button-N1.png";
+import DetectButton_N2 from "./images/Object-Button-N2.png";
 import LoadingImage from "./images/Magnify.svg"
 
 function Classify (){
@@ -17,8 +17,8 @@ function Classify (){
     const [showLoading, setShowLoading] = React.useState(false)
     const [showResult, setShowResult] = useState({ text: "", open: false});
 
-    const DetectImages = () => (<img src={DetectImage} className="DetectImage" alt="" />)
-    const ShowLoading = () => (<img src={LoadingImage} className="DetectLoadingImage" alt=""/>)
+    const DetectImages = () => (<img src={ObjectImage} className="ObjectImage" alt="" />)
+    const ShowLoading = () => (<img src={LoadingImage} className="ObjectLoadingImage" alt=""/>)
 
     const handleChange = e => {
         if (e.target.files.length) {
@@ -41,7 +41,7 @@ function Classify (){
             console.log(res.data.result); 
             setShowButton(false);
             setShowLoading(false);
-            setShowResult({ text: "Result = " + res.data.result[0,0], open: true})
+            setShowResult({ text: "Result = " + res.data.result[0][2], open: true})
         })
         .catch((error) => {
             setShowButton(false);
@@ -53,12 +53,12 @@ function Classify (){
     const ShowButton = () => (
         <div>
             <label htmlFor="upload-button">
-                <img src={DetectButton_U1} className="DetectButton_U" alt=""
+                <img src={DetectButton_U1} className="ObjectButton_U" alt=""
                     onMouseOver={(e) => (e.currentTarget.src = DetectButton_U2)}
                     onMouseOut={(e) => (e.currentTarget.src = DetectButton_U1)}>   
                 </img>
             </label>
-            <img src={DetectButton_N1} className="DetectButton_N" alt="" onClick={handleUpload}
+            <img src={DetectButton_N1} className="ObjectButton_N" alt="" onClick={handleUpload}
                 onMouseOver={(e) => (e.currentTarget.src = DetectButton_N2)}
                 onMouseOut={(e) => (e.currentTarget.src = DetectButton_N1)}>
             </img>
@@ -66,17 +66,17 @@ function Classify (){
     )
 
     const ShowResult = () => (
-        <div className="DetectResult">
+        <div className="ObjectResult">
             {showResult.text}
         </div>
     )
     
     return(
-        <div className="Detect">
+        <div className="Object">
             <MenuBar/>
-            <div className="DetectFooter"></div>
-            <label className="DetectPage"></label>
-            <h1 className="DetectHead">Object Classification</h1>
+            <div className="ObjectFooter"></div>
+            <label className="ObjectPage"></label>
+            <h1 className="ObjectHead">Object Classification</h1>
             { showButton ? <ShowButton /> : null }
             { showImage ? <DetectImages /> : null }
             <input 
@@ -86,7 +86,7 @@ function Classify (){
                 onChange={handleChange} />  
             <label>
                 {image.preview ? (
-                    <img src={image.preview} alt="" height="16vw" className="ImagePreview" /> ) : 
+                    <img src={image.preview} alt="" height="16vw" className="ObjectImagePreview" /> ) : 
                     (<span/>)
                 }
                 { showLoading ? <ShowLoading /> : null }

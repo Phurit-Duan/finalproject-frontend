@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReactComponent as ChatBotIcon } from "../images/Chatbot2-Avatar.svg";
+import { ReactComponent as ChatBotIcon } from "../images/Chatbot-Avatar.svg";
 
 const ChatBotAvatar = () => {
   return (

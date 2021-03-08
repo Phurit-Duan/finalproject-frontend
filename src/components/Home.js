@@ -23,9 +23,9 @@ function Home() {
         </Link>
         <div className="HomeApplication">Application</div>
         <label className="AppLine"></label>
-        <Link to="/Object-Classification">
+        <Link to="/Image-Classification">
           <img src={ClassifyLogo} className="ClassifyLogo" alt="" />
-          <div className="HomeClassify">Object-Classification</div>
+          <div className="HomeClassify">Image-Classification</div>
         </Link>
         <Link to="/Object-Detection">
         <img src={DetectLogo} className="DetectLogo" alt="" />

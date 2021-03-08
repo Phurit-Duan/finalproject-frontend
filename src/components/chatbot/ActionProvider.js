@@ -2,6 +2,9 @@ class ActionProvider {
   constructor(createChatBotMessage, setStateFunc) {
     this.createChatBotMessage = createChatBotMessage;
     this.setState = setStateFunc;
+    this.state = {
+      open:true
+    }
   }
 
   handleBotAnswer = (answer) => {

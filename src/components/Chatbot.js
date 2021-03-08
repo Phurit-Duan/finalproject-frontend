@@ -1,5 +1,4 @@
 import Chatbot from "react-chatbot-kit";
-
 import "./Chatbot.css";
 
 import MenuBar from "./MenuBar";
@@ -9,6 +8,12 @@ import MessageParser from "./chatbot/MessageParser";
 
 
 function Chatbots (){
+
+    const validator = (input) => {
+        if (input.length > 3) return true;
+        return false
+    }
+
     return(
         <div>
             <div className="ChatbotFooter"></div>
@@ -19,8 +24,10 @@ function Chatbots (){
                 config={config}
                 actionProvider={ActionProvider}
                 messageParser={MessageParser}
+                validator={validator}
             /> 
         </div>
+        
     );
 }
 export default Chatbots;
