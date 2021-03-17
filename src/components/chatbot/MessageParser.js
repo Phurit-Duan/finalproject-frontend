@@ -15,7 +15,6 @@ class MessageParser {
       console.log(res)
     })
     .catch((error) => {
-  
       this.actionProvider.handleBotAnswer("Error !!")
     })
   }

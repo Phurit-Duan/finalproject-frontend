@@ -76,7 +76,7 @@ function Classify (){
             <MenuBar/>
             <div className="ObjectFooter"></div>
             <label className="ObjectPage"></label>
-            <h1 className="ObjectHead">Object Classification</h1>
+            <h1 className="ObjectHead">Object Detection</h1>
             { showButton ? <ShowButton /> : null }
             { showImage ? <DetectImages /> : null }
             <input 
