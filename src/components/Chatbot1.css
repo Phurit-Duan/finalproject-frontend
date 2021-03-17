@@ -143,3 +143,16 @@
     fill: #fff;
     width: 2.5vw;
 }
+.test{
+    border-style: none;
+    border-radius: 1vw;
+    position: absolute;
+    display: block; 
+    top: 13vw;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}

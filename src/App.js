@@ -4,7 +4,7 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Detect from "./components/ObjectDetect";
 import Classify from "./components/ObjectClassify";
-import Chatbots from "./components/Chatbot";
+import Chatbots from "./components/Chatbot1";
 
 
 function App ()
