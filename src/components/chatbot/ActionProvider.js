@@ -10,24 +10,8 @@ class ActionProvider {
   handleBotAnswer = (answer) => {
     const message = this.createChatBotMessage(answer);
     this.addMessageToState(message);
-    const clientMessage = this.createClientMessage("I'm looking for this item")
-    this.setClientMessage(clientMessage)
   };
 
-  createClientMesssage = (message) => {
-    const clientMessage = {
-           message: message,
-           type: "user", 
-           id: "somethingUnique"
-   }
-    return clientMessage
-  }
-
-  setClientMessage = (clientMessage) => {
-    this.setState(prevState => ({
-         ...prevState, messages: [...prevState.messages, clientMessage]
-    }))
- }
 
   addMessageToState = (message) => {
     this.setState((prevState) => ({

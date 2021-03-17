@@ -8,8 +8,6 @@ import "./Chatbot2.css";
 import ChatbotLoadingImage from "./images/ChatbotMagnify.svg"
 
 function Chatbots (){
-    const chatListUser = [];
-    const chatListBot = [];
     const [textUser, setTextUser] = React.useState("");
     const [textBot, setTextBot] = React.useState("");
     const [chatUser, setChatUser] = React.useState(chatListUser);
