@@ -23,8 +23,7 @@ function Chatbots (){
                 actionProvider={ActionProvider}
                 messageParser={MessageParser}
                 validator={validator}
-            />
-            
+            /> 
         </div>
         
     );
