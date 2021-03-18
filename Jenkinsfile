@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh('ls -al')
                 sh('printenv')
-                sh('/etc/init.d/apache2 stop')
+                sh"sudo /etc/init.d/apache2 stop"
             }
         }
 
