@@ -106,7 +106,7 @@ li{
 .DetectResult{
     position: relative;
     display: block; 
-    width: 10vw;
+    width: 15vw;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1vw;
@@ -172,7 +172,7 @@ li{
         margin-top: 3vw;
     }
     .DetectResult{
-        width: 30vw;
+        width: 35vw;
         font-size: 3vw;
         border-radius: 1.5vw;
         padding: 1vw 4vw 1vw;
