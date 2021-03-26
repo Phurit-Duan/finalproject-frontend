@@ -9,13 +9,13 @@ function MenuBar() {
             <label className="MenuBar"></label>
             <img src={MenuImage} className="MenuImage" alt="MenuImage" />
             <Link to="/">
-                <div className="MenuHome">Home</div>
+                <p className="MenuHome">Home</p>
             </Link>
             <Link to="/About-us">
-                <div className="MenuAboutUs">About Us</div>
+                <p className="MenuAboutUs">About Us</p>
             </Link>
             <Link to="/Contact">
-                <div className="MenuContact">Contact</div>
+                <p className="MenuContact">Contact</p>
             </Link>
         </div>
     );

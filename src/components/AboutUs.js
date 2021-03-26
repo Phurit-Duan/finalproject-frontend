@@ -13,11 +13,11 @@ function AboutUs ()
             <label className="MenuBar"></label>
             <img src={MenuImage} className="MenuImage" alt="" />
             <Link to="/">
-                <div className="MenuHome">Home</div>
+                <p className="MenuHome">Home</p>
             </Link>
-                <div className="P-MenuAboutUs">About Us</div>
+                <p className="P-MenuAboutUs">About Us</p>
             <Link to="/Contact">
-                <div className="MenuContact">Contact</div>
+                <p className="MenuContact">Contact</p>
             </Link>
             <img src={AboutImage} className="AboutImage" alt=""/>
             <img src={AboutText} className="AboutText" alt=""/>

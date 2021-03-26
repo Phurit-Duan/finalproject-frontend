@@ -13,28 +13,32 @@ function Home() {
   return (
     <div className="Container">
       <label className="MenuBar"></label>
-        <img src={MenuImage} className="MenuImage" alt="" />
-        <div className="P-MenuHome">Home</div>
-        <Link to="/About-us">
-          <div className="MenuAboutUs">About Us</div>
-        </Link>
-        <Link to="/Contact">
-          <div className="MenuContact">Contact</div>
-        </Link>
-        <div className="HomeApplication">Application</div>
-        <label className="AppLine"></label>
-        <Link to="/Image-Classification">
-          <img src={ClassifyLogo} className="ClassifyLogo" alt="" />
-          <div className="HomeClassify">Image-Classification</div>
-        </Link>
-        <Link to="/Object-Detection">
-        <img src={DetectLogo} className="DetectLogo" alt="" />
-          <div className="HomeDetect">Object-Detection</div>
-        </Link>
-        <Link to="/NLP-Chatbot">
-          <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
-          <div className="HomeChatbot">NLP-Chatbot</div>
-        </Link>
+      <img src={MenuImage} className="MenuImage" alt="" />
+      <p className="P-MenuHome">Home</p>
+      <Link to="/About-us">
+        <p className="MenuAboutUs">About Us</p>
+      </Link>
+      <Link to="/Contact">
+        <p className="MenuContact">Contact</p>
+      </Link>
+      <h1 className="HomeApplication">Application</h1>
+      <label className="AppLine"></label>
+      <div className="Vision">Vision</div>
+      <label className="VisionLine"></label>
+      <div className="Conver">Conversation</div>
+      <label className="ConverLine"></label>
+      <Link to="/Image-Classification">
+        <img src={ClassifyLogo} className="ClassifyLogo" alt="" />
+        <div className="HomeClassify">Image-Classification</div>
+      </Link>
+      <Link to="/Object-Detection">
+      <img src={DetectLogo} className="DetectLogo" alt="" />
+        <div className="HomeDetect">Object-Detection</div>
+      </Link>
+      <Link to="/NLP-Chatbot">
+        <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
+        <div className="HomeChatbot">NLP-Chatbot</div>
+      </Link>
     </div>
   );
 }

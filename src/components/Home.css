@@ -1,17 +1,6 @@
 .Container{
     background-color: #FDF6ED;
 }
-.P-MenuHome{
-    position: absolute;
-    top: 3.2vw;
-    left : 35vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
-    color: #E57A44;
-    cursor: default;
-}
 .HomeApplication{
     position: absolute;
     top: 18vw;
@@ -21,9 +10,8 @@
     font-weight: 700;
     font-size: 3vw;
     color: #621708;
-
 }
-.AppLine{
+/*.AppLine{
     position: absolute;
     top: 20.5vw;
     left : 50vw;
@@ -33,16 +21,16 @@
     border-bottom: #E57A44;
     border-style: solid;
     border-width: 0 0 0.5vw 0;
-}
+}*/
 .ClassifyLogo{
     position: absolute;
-    width: 6vw;
+    width: 8vw;
     background: rgb(242,204,143);
     background: linear-gradient(225deg, rgba(242,204,143,1) 40%, rgba(235,137,88,1) 100%);
     padding: 0.5vw 0.5vw 0.5vw;
     border-style: hidden;
     border-radius: 2vw;
-    top: 28vw;
+    top: 36vw;
     left: 25vw;
     transform: translate(-50%, -50%);
     cursor: pointer;  
@@ -53,13 +41,13 @@
 }
 .DetectLogo{
     position: absolute;
-    width: 6vw;
+    width: 8vw;
     background: rgb(242,204,143);
     background: linear-gradient(225deg, rgba(242,204,143,1) 40%, rgba(235,137,88,1) 100%);
     padding: 0.5vw 0.5vw 0.5vw;
     border-style: hidden;
     border-radius: 2vw;
-    top: 28vw;
+    top: 36vw;
     left: 50vw;
     transform: translate(-50%, -50%);
     cursor: pointer;  
@@ -70,14 +58,14 @@
 }
 .ChatbotLogo{
     position: absolute;
-    width: 6vw;
+    width: 8vw;
     background: rgb(242,204,143);
     background: linear-gradient(225deg, rgba(242,204,143,1) 40%, rgba(235,137,88,1) 100%);
     padding: 0.5vw 0.5vw 0.5vw;
     border-style: hidden;
     border-radius: 2vw;
-    top: 28vw;
-    left: 75vw;
+    top: 62vw;
+    left: 25vw;
     transform: translate(-50%, -50%);
     cursor: pointer;  
 }
@@ -87,7 +75,7 @@
 }
 .HomeClassify{
     position: absolute;
-    top: 34vw;
+    top: 43vw;
     left : 25vw;
     transform: translate(-50%, -50%);
     font-family: 'Pridi', serif;
@@ -96,10 +84,9 @@
     color: #621708;
     cursor: pointer;  
 }
-
 .HomeDetect{
     position: absolute;
-    top: 34vw;
+    top: 43vw;
     left : 50vw;
     transform: translate(-50%, -50%);
     font-family: 'Pridi', serif;
@@ -108,15 +95,115 @@
     color: #621708;
     cursor: pointer;  
 }
-
 .HomeChatbot{
     position: absolute;
-    top: 34vw;
-    left : 75vw;
+    top: 71.5vw;
+    left : 25vw;
     transform: translate(-50%, -50%);
+    padding-bottom: 5vw;
     font-family: 'Pridi', serif;
     font-weight: 500;
     font-size: 2vw;
     color: #621708;
     cursor: pointer;  
+}
+.Vision{
+    position: absolute;
+    top: 23vw;
+    left : 7vw;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: #621708;
+}
+.VisionLine{
+    position: absolute;
+    top: 26.5vw;
+    left : 11vw;
+    width: 81vw;
+    color: #621708;
+    border-bottom: #E57A44;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+}
+.Conver{
+    position: absolute;
+    top: 49vw;
+    left : 7vw;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: #621708;
+}
+.ConverLine{
+    position: absolute;
+    top: 52.5vw;
+    left : 19vw;
+    width: 73vw;
+    color: #621708;
+    border-bottom: #E57A44;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+}
+@media only screen and (max-width: 768px) {
+    .HomeApplication{
+        top: 20vw;
+        font-size: 4vw;
+    }
+    .ClassifyLogo{
+        width: 12vw;
+        top: 42vw;
+        left: 30vw; 
+        border-radius: 3vw;
+    }
+    .HomeClassify{
+        top: 52vw;
+        left : 30vw;
+        font-size: 3vw;
+    }
+    .DetectLogo{
+        width: 12vw;
+        top: 42vw;
+        left: 70vw;
+        border-radius: 4vw;
+    }
+    .HomeDetect{
+        top: 52vw;
+        left : 70vw;
+        font-size: 3vw; 
+    }
+    .ChatbotLogo{
+        width: 12vw;
+        top: 75vw;
+        left: 50vw;
+        border-radius: 4vw;
+    }
+    .HomeChatbot{
+        top: 87vw;
+        left : 50vw;
+        font-size: 3vw; 
+    }
+    .Vision{
+        top: 25vw;
+        left : 7vw;
+        font-size: 3vw;
+    }
+    .VisionLine{
+        top: 29vw;
+        left : 12vw;
+        width: 80vw;
+        border-width: 0 0 0.8vw 0;
+    }
+    .Conver{
+        top: 58vw;
+        left : 7vw;
+        font-size: 3vw;
+        color: #621708;
+    }
+    .ConverLine{
+        top: 62vw;
+        left : 21vw;
+        width: 71vw;
+        border-width: 0 0 0.8vw 0;
+    }
 }
