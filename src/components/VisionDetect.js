@@ -42,7 +42,7 @@ function Detect (){
         e.preventDefault();
         const formData = new FormData();
         formData.append("image", image.raw);
-        axios.post(`http://127.0.0.1:8000/object_detection_api/`,formData)
+        axios.post(`http://35.247.150.245:8000/object_detection_api/`,formData)
         .then(res => {
             console.log(res.data.result); 
             console.log(res.data.result[0]); 
