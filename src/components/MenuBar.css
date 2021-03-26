@@ -14,71 +14,69 @@
     right: 0vw;
     border-top-left-radius: 2vw;
 }
-.MenuHome{
-    position: absolute;
-    top: 3.2vw;
-    left : 35vw;
-    transform: translate(-50%, -50%);
+p{
     font-family: 'Pridi', serif;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 1.8vw;
+}
+.MenuHome{
+    position: relative;
+    display: inline-block;
+    margin-left: 62.8vw;
     color: #621708;
     cursor: pointer;
 }
 .MenuHome:hover{
-    position: absolute;
-    top: 3.2vw;
-    left : 35vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
     text-decoration: underline;
 }
+.P-MenuHome{
+    position: relative;
+    display: inline-block;
+    margin-left: 62.8vw;
+    color: #E57A44;
+    cursor: default;
+}
 .MenuAboutUs{
-    position: absolute;
-    top: 3.2vw;
-    left : 50vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
+    position: relative;
+    display: inline-block;
+    padding-left: 5vw;
     color: #621708;
     cursor: pointer;
 }
 .MenuAboutUs:hover{
-    position: absolute;
-    top: 3.2vw;
-    left : 50vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
     text-decoration: underline;
 }
+.P-MenuAboutUs{
+    position: relative;
+    display: inline-block;
+    padding-left: 5vw;
+    color: #E57A44;
+    cursor: default;
+}
 .MenuContact{
-    position: absolute;
-    top: 3.2vw;
-    left : 66vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
+    position: relative;
+    display: inline-block;
+    padding-left: 5vw;
     color: #621708;
     cursor: pointer;
 } 
 .MenuContact:hover{
-    position: absolute;
-    top: 3.2vw;
-    left : 66vw;
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
-    color: #621708;
-    cursor: pointer;
     text-decoration: underline;
-} 
+}
+.P-MenuContact{
+    position: relative;
+    display: inline-block;
+    padding-left: 5vw;
+    color: #E57A44;
+    cursor: default;   
+}  
+@media only screen and (max-width: 768px) {
+    .MenuImage{width: 30vw;}
+    .MenuBar{height: 7vw;}
+    p{
+        font-size: 2.5vw;
+    }
+    .MenuHome,.P-MenuHome{
+        margin-left: 55vw;
+    }
+}

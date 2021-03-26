@@ -1,18 +1,6 @@
 .Container{
     background-color: #FDF6ED;
 }
-.P-MenuAboutUs{
-    position: absolute;
-    top: 3.2vw;
-    left : 50vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 2vw;
-    color: #E57A44;
-    cursor: pointer;
-
-}
 .AboutImage{
     position: absolute;
     display: block; 

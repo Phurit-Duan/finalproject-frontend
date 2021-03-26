@@ -2,8 +2,8 @@ import {Route} from 'react-router-dom';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
-import Detect from "./components/ObjectDetect";
-import Classify from "./components/ObjectClassify";
+import Detect from "./components/VisionDetect";
+import Classify from "./components/VisionClassify";
 import Chatbots from "./components/Chatbot1";
 
 

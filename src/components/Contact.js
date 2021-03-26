@@ -13,12 +13,12 @@ function Contact ()
             <label className="MenuBar"></label>
             <img src={MenuImage} className="MenuImage" alt="" />
             <Link to="/">
-                <div className="MenuHome">Home</div>
+                <p className="MenuHome">Home</p>
             </Link>
             <Link to="/About-us">
-                <div className="MenuAboutUs">About Us</div>
+                <p className="MenuAboutUs">About Us</p>
             </Link>
-            <div className="P-MenuContact">Contact</div>
+            <p className="P-MenuContact">Contact</p>
             <img src={ContactPage} className="ContactPage" alt="" />
         </div>
     );
