@@ -58,7 +58,6 @@ function Classify (){
             setResult(Result.concat("Error"));
             setShowPrevious(true);
         })
-        
     };
 
     const ShowButtons = () => (

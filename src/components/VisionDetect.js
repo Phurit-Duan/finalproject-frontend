@@ -64,7 +64,6 @@ function Detect (){
             setResult(Result.concat("Error"));
             setShowPrevious(true);
         })
-        
     };
 
     const ShowButtons = () => (
