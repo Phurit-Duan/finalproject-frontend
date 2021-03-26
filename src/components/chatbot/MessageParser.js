@@ -8,7 +8,7 @@ class MessageParser {
     console.log(message);
     const formData = new FormData();
     formData.append("text", message);
-    axios.post(`http://127.0.0.1:8000/nlp_test/`,formData)
+    axios.post(`http://35.247.150.245:8000/nlp_test/`,formData)
     .then((res) => {
       this.actionProvider.handleBotAnswer("Result is "+res.data.result)
       console.log(res)
