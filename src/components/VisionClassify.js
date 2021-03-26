@@ -41,7 +41,7 @@ function Classify (){
         e.preventDefault();
         const formData = new FormData();
         formData.append("image", image.raw);
-        axios.post(`http://127.0.0.1:8000/process_image/`,formData)
+        axios.post(`http://35.247.150.245:8000/process_image/`,formData)
         .then(res => {
             console.log(res.data.result); 
             setShowLoading(false);
@@ -58,7 +58,6 @@ function Classify (){
             setResult(Result.concat("Error"));
             setShowPrevious(true);
         })
-        
     };
 
     const ShowButtons = () => (
