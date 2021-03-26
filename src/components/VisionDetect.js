@@ -44,13 +44,12 @@ function Detect (){
         formData.append("image", image.raw);
         axios.post(`http://35.247.150.245:8000/object_detection_api/`,formData)
         .then(res => {
-            console.log(res.data.result); 
-            console.log(res.data.result[0]); 
+            console.log(res.data.objects); 
             setShowLoading(false);
             var length=1;
-            for( var key in res.data.result) {
+            for( var key in res.data.objects) {
                 console.log(key)
-                if(Object.keys(res.data.result).length === 1)
+                if(Object.keys(res.data.objects).length === 1)
                     initialResult.push(key)
                 else
                     initialResult.push(length + ". " + key)
