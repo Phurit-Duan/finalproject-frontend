@@ -35,9 +35,13 @@ function Home() {
       <img src={DetectLogo} className="DetectLogo" alt="" />
         <div className="HomeDetect">Object-Detection</div>
       </Link>
-      <Link to="/NLP-Chatbot">
-        <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
-        <div className="HomeChatbot">NLP-Chatbot</div>
+      <Link to="/Chatbot-text-only">
+        <img src={ChatbotLogo} className="ChatbotTextLogo" alt="" />  
+        <div className="HomeChatbotText">Chatbot (text only)</div>
+      </Link>
+      <Link to="/Chatbot-text-image">
+        <img src={ChatbotLogo} className="ChatbotImageLogo" alt="" />  
+        <div className="HomeChatbotImage">Chatbot (text and image)</div>
       </Link>
     </div>
   );

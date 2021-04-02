@@ -1,12 +1,12 @@
 import Chatbot from "react-chatbot-kit";
-import "./Chatbot1.css";
+import "./Chatbot.css";
 
 import MenuBar from "./MenuBar";
-import config from "./chatbot/config";
-import ActionProvider from "./chatbot/ActionProvider";
-import MessageParser from "./chatbot/MessageParser";
+import config from "./chatbotImage/config";
+import ActionProvider from "./chatbotImage/ActionProvider";
+import MessageParser from "./chatbotImage/MessageParser";
 
-function Chatbots (){
+function ChatbotImage (){
     const validator = (input) => {
         if (input.length > 0) return true;
         return false
@@ -28,4 +28,4 @@ function Chatbots (){
         
     );
 }
-export default Chatbots;
+export default ChatbotImage;

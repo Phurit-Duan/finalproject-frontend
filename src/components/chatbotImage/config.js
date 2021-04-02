@@ -1,19 +1,19 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import ChatBotAvatar from "./ChatBotAvatar";
-import Options from "./Options";
+import ImageUpload from "./ImageUpload";
 
 const config = {
   botName: "NLP_Bot",
   initialMessages: [
     createChatBotMessage(`Please, type the word you want to test for NLP.`, {
-      widget: "options",
+      widget: "ImageUpload",
     }),
   ],
- /* widgets: [
+  widgets: [
     {
-      widgetName: "options",
-      widgetFunc: (props) => <Options {...props} />,
-    },],*/
+      widgetName: "ImageUpload",
+      widgetFunc: (props) => <ImageUpload {...props} />,
+    }],
   customComponents: {
     botAvatar: (props) => <ChatBotAvatar {...props} />
     }  

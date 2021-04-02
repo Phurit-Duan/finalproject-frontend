@@ -81,8 +81,7 @@
 }
 .react-chatbot-kit-user-chat-message {
     background-color: #E57A44;
-    display: block;
-    width: auto;
+    max-width: 50vw;
     padding-left: 1vw;
     padding-right: 1vw;
     margin-left: 0vw;
@@ -91,9 +90,11 @@
     font-family: 'Pridi', serif;
     font-weight: 300;
     font-size: 1.5vw;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
+    word-wrap: break-word;
 }
+
 .react-chatbot-kit-user-chat-message-arrow {
     border-left: 8px solid #E57A44;
 
@@ -117,6 +118,7 @@
 .react-chatbot-kit-chat-input {
     border: none;
     padding-left: 2vw;
+    padding-right: 7vw;
     font-family: 'Pridi', serif;
     font-weight: 300;
     font-size: 1.7vw;
@@ -141,18 +143,6 @@
 }
 .react-chatbot-kit-chat-btn-send-icon {
     fill: #fff;
-    width: 2.5vw;
+    width: 2.2vw;
 }
-.test{
-    border-style: none;
-    border-radius: 1vw;
-    position: absolute;
-    display: block; 
-    top: 13vw;
-    font-family: 'Pridi', serif;
-    font-weight: 700;
-    font-size: 3vw;
-    color: #621708;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-}
+

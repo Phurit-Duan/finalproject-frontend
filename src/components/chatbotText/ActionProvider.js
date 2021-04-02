@@ -12,22 +12,6 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
-  createClientMesssage = (message) => {
-    const clientMessage = {
-           message: message,
-           type: "user", 
-           id: {uuid}
-    }
-    return clientMessage
-  }
-
-  setClientMessage = (clientMessage) => {
-    this.setState(prevState => ({
-        ...prevState, messages: [...prevState.messages, clientMessage]
-    }))
-  }
-
-
   addMessageToState = (message) => {
     this.setState((prevState) => ({
       ...prevState,

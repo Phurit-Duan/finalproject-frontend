@@ -1,0 +1,64 @@
+.ImageUploadContainer{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 40.5vw;
+    left: 54vw;
+}
+.UploadButton{  
+    width: 3vw;
+    border: none;
+    outline:none;
+    cursor: pointer;
+}
+.ImagePreviewContainer{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 29vw;
+    left: 0vw;
+    background-color: #e68554; 
+    height: 10vw;
+    width: 68vw;
+    white-space: nowrap;
+    
+}
+.ImagePreview{
+    margin: 1vw 1vw 1vw 2.2vw;
+    height: 8vw; 
+    float: left;
+}
+section {
+  clear: both;
+}
+
+.ImageButton_C{
+    position:relative;
+    display: inline;
+    margin-left: 1vw;
+    top: 3.2vw;
+    width: 4vw;
+}
+.ImageButton_R{
+    position: relative;
+    display: inline;
+    top: 3.2vw;
+    margin-left: 1vw;
+    width: 4vw;
+}
+.ImageChatContainer{
+    display: flex;
+    margin: 15px 0;
+    justify-content: flex-end;
+}
+.ImageChatList{
+    right: 5vw;
+}
+.ImageChat{
+    position: relative;
+    display: flex;
+    background-color: #E57A44;
+    padding: 1vw;
+    width: 20vw;
+}
+
