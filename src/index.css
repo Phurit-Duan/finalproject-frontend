@@ -19,3 +19,6 @@ code {
   background-size: cover;
   width: 100vw;
 }
+.Container{
+  overflow-x: hidden;
+}

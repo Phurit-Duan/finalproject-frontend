@@ -1,18 +1,24 @@
 .MenuImage{
     position: absolute;
-    width: 20vw;
-    top: 1vw;
+    width: 15vw;
+    top: 0.6vw;
     left: 1vw;
-
+    cursor: pointer;
+}
+.MenuImageHome{
+    position: absolute;
+    width: 15vw;
+    top: 0.6vw;
+    left: 1vw;
 }
 .MenuBar{
     background-color: #f2cc8f;
     position: absolute;
-    width: 95vw;
+    width: 89.5vw;
     height: 4.5vw;
     top: 1vw;
     right: 0vw;
-    border-top-left-radius: 2vw;
+    border-top-left-radius: 3vw;
 }
 p{
     font-family: 'Pridi', serif;
@@ -22,7 +28,7 @@ p{
 .MenuHome{
     position: relative;
     display: inline-block;
-    margin-left: 62.8vw;
+    margin-left: 55vw;
     color: #621708;
     cursor: pointer;
 }
@@ -32,7 +38,7 @@ p{
 .P-MenuHome{
     position: relative;
     display: inline-block;
-    margin-left: 62.8vw;
+    margin-left: 55vw;
     color: #E57A44;
     cursor: default;
 }
@@ -70,13 +76,37 @@ p{
     color: #E57A44;
     cursor: default;   
 }  
+.MenuDevelope{
+    position: relative;
+    display: inline-block;
+    padding-left: 5vw;
+    color: #621708;
+    cursor: pointer;
+} 
+.MenuDevelope:hover{
+    text-decoration: underline;
+}
+.P-MenuDevelope{
+    position: relative;
+    display: inline-block;
+    padding-left: 5vw;
+    color: #E57A44;
+    cursor: default;   
+}  
 @media only screen and (max-width: 768px) {
-    .MenuImage{width: 30vw;}
-    .MenuBar{height: 7vw;}
+    .MenuImage,.MenuImageHome{width: 20vw;}
+    .MenuBar{
+        height: 7vw; 
+        width: 86.5vw;
+        border-top-left-radius: 4vw;
+    }
     p{
         font-size: 2.5vw;
     }
+    .MenuAboutUs,.P-MenuAboutUs,.MenuDevelope,.P-MenuDevelope,.MenuContact,.P-MenuContact{
+        padding-left: 5vw;
+    }
     .MenuHome,.P-MenuHome{
-        margin-left: 55vw;
+        margin-left: 46.5vw;
     }
 }

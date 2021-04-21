@@ -1,0 +1,133 @@
+.Container{
+    background-color: #FDF6ED;
+}
+.ContactHead{
+    text-align: center;
+    margin:  8vw 0 4vw 0;
+}
+.ContactHead h1{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+    text-align: center;
+}
+.ContactLineH{
+    width: 8vw;
+    position: relative;
+    border-bottom: #E57A44;
+    text-align: center;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+    margin: auto;
+}
+.ContactDeveloper{
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+.ContactDeveloper_1{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: center;
+}
+.ContactDeveloper_2{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: center;
+    margin-left: 6vw;
+}
+.ContactDeveloper_3{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: center;
+    margin-left: 6vw;
+}
+.ContactDeveloper img{
+    width: 15vw;
+    padding: 1.2vw;
+    background: #f89729;
+    border-radius: 50vw;
+}
+.ContactDeveloper h1{
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: 1vw;
+}
+.ContactDeveloper h2{
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: 1vw;
+}
+.ContactDeveloper p{
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: -0.5vw;
+}
+@media only screen and (max-width: 768px) {
+    .ContactHead{
+        text-align: center;
+        margin:  11vw 0 5vw 0;
+    }
+    .ContactHead h1{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #621708;
+        text-align: center;
+    }
+    .ContactLineH{
+        width: 8vw;
+        position: relative;
+        border-bottom: #E57A44;
+        text-align: center;
+        border-style: solid;
+        border-width: 0 0 0.8vw 0;
+        margin: auto;
+    }
+    .ContactDeveloper{
+        text-align: center;
+        margin-top: 3vw;
+        padding-bottom: 5vw;
+    }
+    .ContactDeveloper_2{
+        margin-left: 10vw;
+    }
+    .ContactDeveloper_3{
+        display: block;
+        margin-top: 5vw;
+        margin-left: 0vw;
+    }
+    .ContactDeveloper img{
+        width: 25vw;
+        padding: 2vw;
+        background: #f89729;
+        border-radius: 50vw;
+    }
+    .ContactDeveloper h1{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: auto;
+        margin-top: 1vw;
+    }
+    .ContactDeveloper h2{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: auto;
+        margin-top: 1vw;
+    }
+    .ContactDeveloper p{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: auto;
+        margin-top: -0.5vw;
+    }
+}

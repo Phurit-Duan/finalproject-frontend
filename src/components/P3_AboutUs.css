@@ -1,0 +1,240 @@
+.Container{
+    background-color: #FDF6ED;
+}
+.AboutHead{
+    text-align: center;
+    margin:  8vw 0 4vw 0;
+}
+.AboutHead h1{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+    text-align: center;
+}
+.AboutLineH{
+    width: 8vw;
+    position: relative;
+    border-bottom: #E57A44;
+    text-align: center;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+    margin: auto;
+}
+.AboutDeveloper{
+    text-align: center;
+    margin-top: 2vw;
+}
+.AboutDeveloper_1{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: center;
+}
+.AboutDeveloper_2{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: center;
+    margin-left: 5vw;
+}
+.AboutDeveloper_3{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: center;
+    margin-left: 5vw;
+}
+.AboutDeveloper img{
+    width: 15vw;
+    padding: 1.2vw;
+    background: #f89729;
+    border-radius: 50vw;
+}
+.AboutDeveloper h1{
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: 1vw;
+}
+.AboutDeveloper h2{
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: 1vw;
+}
+.AboutDeveloper p{
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: -0.5vw;
+}
+.AboutAdvisor{
+    text-align: center;
+    margin-top: 4vw 
+}
+.AboutAdvisor h1{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+    text-align: center;
+}
+.AboutAdvisors{
+    text-align: center;
+    margin-top: 4vw;
+    padding-bottom: 5vw;
+}
+.AboutAdvisors img{
+    display: inline-block;
+    width: 25.8vw;
+    text-align: center;
+    padding: 1.2vw;
+    background: #f8a342;
+    border-radius: 0vw;
+}
+.AboutAdvisorsText{
+    display: inline-block;
+    font-family: 'Pridi', serif;
+    color: #621708;
+    text-align: left;
+    vertical-align: top;
+    margin: auto;
+    margin-left: 5vw;
+}
+.AboutAdvisorsText h1{
+    font-weight: 500;
+    font-size: 2.02vw;
+    margin: auto;
+}
+.AboutAdvisorsText h2{
+    font-family: 'Pridi', serif;
+    color: #621708;
+    font-weight: 500;
+    font-size: 2vw;
+    margin: auto;
+    margin-top: 1.5vw;
+}
+.AboutAdvisorsText p{
+    font-family: 'Pridi', serif;
+    color: #621708;
+    font-weight: 500;
+    font-size: 1.52vw;
+    margin: auto;
+    margin-top: -0.5vw;
+}
+@media only screen and (max-width: 768px) {
+    .AboutHead{
+        text-align: center;
+        margin:  11vw 0 5vw 0;
+    }
+    .AboutHead h1{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #621708;
+        text-align: center;
+    }
+    .AboutLineH{
+        width: 8vw;
+        position: relative;
+        border-bottom: #E57A44;
+        text-align: center;
+        border-style: solid;
+        border-width: 0 0 0.8vw 0;
+        margin: auto;
+    }
+    .AboutDeveloper{
+        text-align: center;
+        margin-top: 3vw;
+    }
+    .AboutDeveloper_2{
+        margin-left: 10vw;
+    }
+    .AboutDeveloper_3{
+        margin-top: 5vw;
+        margin-left: 0vw;
+    }
+    .AboutDeveloper img{
+        width: 25vw;
+        padding: 2vw;
+        background: #f89729;
+        border-radius: 50vw;
+    }
+    .AboutDeveloper h1{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: auto;
+        margin-top: 1vw;
+    }
+    .AboutDeveloper h2{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: auto;
+        margin-top: 1vw;
+    }
+    .AboutDeveloper p{
+        font-weight: 500;
+        font-size: 2vw;
+        margin: auto;
+        margin-top: -0.5vw;
+    }
+    .AboutAdvisor{
+        text-align: center;
+        margin-top: 4vw 
+    }
+    .AboutAdvisor h1{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #621708;
+        text-align: center;
+    }
+    .AboutAdvisors{
+        text-align: center;
+        margin-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    .AboutAdvisors img{
+        display: inline-block;
+        width: 30vw;
+        text-align: center;
+        padding: 1.2vw;
+        background: #f8a342;
+        border-radius: 0vw;
+    }
+    .AboutAdvisorsText{
+        display: inline-block;
+        font-family: 'Pridi', serif;
+        color: #621708;
+        text-align: left;
+        vertical-align: top;
+        margin: auto;
+        margin-left: 5vw;
+    }
+    .AboutAdvisorsText h1{
+        font-weight: 500;
+        font-size: 3vw;
+        margin: auto;
+    }
+    .AboutAdvisorsText h2{
+        font-family: 'Pridi', serif;
+        color: #621708;
+        font-weight: 500;
+        font-size: 2.95vw;
+        margin: auto;
+        margin-top: 2vw;
+    }
+    .AboutAdvisorsText p{
+        font-family: 'Pridi', serif;
+        color: #621708;
+        font-weight: 500;
+        font-size: 2.25vw;
+        margin: auto;
+        margin-top: -0.5vw;
+    }
+}
