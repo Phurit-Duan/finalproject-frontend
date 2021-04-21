@@ -1,0 +1,290 @@
+.DeveloperHead{
+    text-align: center;
+    margin:  8vw 0 3vw 0;
+}
+.DeveloperHead h1{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+    text-align: center;
+}
+.DeveloperLineH{
+    width: 18vw;
+    position: relative;
+    border-bottom: #E57A44;
+    text-align: center;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+    margin: auto;
+    margin-bottom: 2vw;
+}
+.DeveloperContainer{
+    position: relative;
+    display: block; 
+    background-color: #FFEED2;
+    border-style: none;
+    border-radius: 2vw;
+    width: 70vw; 
+    margin: auto;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    margin-bottom: 8vw;
+}
+.DeveloperAPI h1{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #621708;
+    text-align: left;
+    padding-left: 12VW;
+}
+.DeveloperInfoButton{
+    position: absolute;
+    display: inline;
+    float: none;
+    margin: 0.3vw 0 0 8.5vw;
+    height: 2.5vw;
+}
+path {
+    color: #022B3A;
+    width: 2vw;
+}
+.DeveloperInfoContainer1{
+    position: relative;
+    display: block; 
+    margin-top: -1.5vw;
+    background-color: #022B3A;
+    border-style: none;
+    border-radius: 2vw;
+    border-top-left-radius: 0;
+    width: 39vw; 
+    padding-bottom: 5vw;
+}
+.DeveloperInfoContainer2{
+    position: relative;
+    display: block; 
+    margin-top: -1.5vw;
+    background-color: #022B3A;
+    border-style: none;
+    border-radius: 2vw;
+    width: 38vw; 
+    padding-bottom: 5vw;
+}
+.DeveloperInfoContainer3{
+    position: relative;
+    display: block; 
+    margin-top: -1.5vw;
+    background-color: #022B3A;
+    border-style: none;
+    border-radius: 2vw;
+    width: 50.8vw; 
+    padding-bottom: 5vw;
+}
+.DeveloperInfoContainer4{
+    position: relative;
+    display: block; 
+    margin-top: -1.5vw;
+    background-color: #022B3A;
+    border-style: none;
+    border-radius: 2vw;
+    border-bottom-left-radius: 0;
+    width: 38vw; 
+    padding-bottom: 5vw;
+}
+.DeveloperInfoHead{
+    position: relative;
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 2vw;
+    padding-left: 5vw;
+    margin-bottom: -2vw;
+}
+.DeveloperInfoText h2{
+    position: relative;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-align: justify;
+    word-wrap: break-word;
+    padding-left: 8vw;
+    margin-bottom: -2vw;
+    margin-top: 3vw;
+}
+.DeveloperInfoText p{
+    position: relative;
+    width: 24vw;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-align: justify;
+    word-wrap: break-word;
+    padding-left: 11vw;
+    margin-bottom: -2vw;
+}
+.DeveloperAPI p{
+    position: relative;
+    padding-left: 18VW;
+    margin-top: 0;
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 1.7vw;
+    color: #E57A44;
+    text-align: left;
+}
+.DeveloperAPI p:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+    .DeveloperHead{
+        text-align: center;
+        margin:  11vw 0 3vw 0;
+    }
+    .DeveloperHead h1{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #621708;
+        text-align: center;
+    }
+    .DeveloperLineH{
+        width: 18vw;
+        position: relative;
+        border-bottom: #E57A44;
+        text-align: center;
+        border-style: solid;
+        border-width: 0 0 0.8vw 0;
+        margin: auto;
+        margin-bottom: 4vw;
+    }
+    .DeveloperContainer{
+        position: relative;
+        display: block; 
+        background-color: #FFEED2;
+        border-style: none;
+        border-radius: 2vw;
+        width: 90vw; 
+        margin: auto;
+        padding-top: 4vw;
+        padding-bottom: 3vw;
+        margin-bottom: 11vw;
+    }
+    .DeveloperAPI h1{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 700;
+        font-size: 3vw;
+        color: #621708;
+        text-align: left;
+        padding-left: 12.5VW;
+    }
+    .DeveloperInfoButton{
+        position: absolute;
+        display: inline;
+        float: none;
+        margin: 0.3vw 0 0 7vw;
+        height: 4vw;
+    }
+    path {
+        color: #022B3A;
+        width: 2vw;
+    }
+    .DeveloperInfoContainer1{
+        position: relative;
+        display: block; 
+        margin-top: -1.5vw;
+        background-color: #022B3A;
+        border-style: none;
+        border-radius: 2vw;
+        border-top-left-radius: 0;
+        width: 47vw; 
+        padding-bottom: 5vw;
+    }
+    .DeveloperInfoContainer2{
+        position: relative;
+        display: block; 
+        margin-top: -1.5vw;
+        background-color: #022B3A;
+        border-style: none;
+        border-radius: 2vw;
+        width: 46vw; 
+        padding-bottom: 5vw;
+    }
+    .DeveloperInfoContainer3{
+        position: relative;
+        display: block; 
+        margin-top: -1.5vw;
+        background-color: #022B3A;
+        border-style: none;
+        border-radius: 2vw;
+        width: 61vw; 
+        padding-bottom: 5vw;
+    }
+    .DeveloperInfoContainer4{
+        position: relative;
+        display: block; 
+        margin-top: -1.5vw;
+        background-color: #022B3A;
+        border-style: none;
+        border-radius: 2vw;
+        border-bottom-left-radius: 0;
+        width: 46vw; 
+        padding-bottom: 5vw;
+    }
+    .DeveloperInfoHead{
+        position: relative;
+        font-family: 'Pridi', serif;
+        font-weight: 500;
+        font-size: 3vw;
+        color: #ffffff;
+        text-align: left;
+        padding-top: 2vw;
+        padding-left: 6vw;
+        margin-bottom: -2vw;
+    }
+    .DeveloperInfoText h2{
+        position: relative;
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 2vw;
+        color: #ffffff;
+        text-align: justify;
+        word-wrap: break-word;
+        padding-left: 11vw;
+        margin-bottom: -2vw;
+        margin-top: 3vw;
+    }
+    .DeveloperInfoText p{
+        position: relative;
+        width: 24vw;
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 2vw;
+        color: #ffffff;
+        text-align: justify;
+        word-wrap: break-word;
+        padding-left: 14vw;
+        margin-bottom: -2vw;
+    }
+    .DeveloperAPI p{
+        position: relative;
+        padding-left: 18VW;
+        margin-top: 0;
+        font-family: 'Pridi', serif;
+        font-weight: 500;
+        font-size: 2.5vw;
+        color: #E57A44;
+        text-align: left;
+    }
+    .DeveloperAPI p:hover{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,80 @@
+.Footer{
+    clear: both;
+    position: relative;
+    height: 3.5vw;
+    margin-top: -3.5vw;
+    padding: 0.5vw 2vw 1vw;
+    border-top: #193E4C;
+    border-width: 0.3vw 0 0 0;
+    border-style:dashed;
+}
+.Footer h1{
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: #f39600;
+    text-align: left;
+    margin-bottom: -0.5vw;
+}
+.Footer div{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: #f39600;
+    text-align: left;
+    margin-left: 3vw;
+}
+.Footer a{
+    color: #193E4C;
+}
+.Footer p{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: #f39600;
+    text-align: left;
+    padding-left: 3vw;
+}
+@media only screen and (max-width: 768px) {
+    .Footer{
+        clear: both;
+        position: relative;
+        height: 6vw;
+        margin-top: -6vw;
+        padding: 0.5vw 5vw 6vw;
+        border-top: #193E4C;
+        border-width: 0.3vw 0 0 0;
+        border-style:dashed;
+    }
+    .Footer h1{
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 2vw;
+        color: #f39600;
+        text-align: left;
+        margin-bottom: -1vw;
+    }
+    .Footer div{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 1.5vw;
+        color: #f39600;
+        text-align: left;
+        padding-left: 2vw;
+    }
+    .Footer a{
+        color: #193E4C;
+    }
+    .Footer p{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 1.5vw;
+        color: #f39600;
+        text-align: left;
+        padding-left: 5vw;
+    }   
+}

@@ -1,4 +1,3 @@
-import { uuid } from 'uuidv4';
 
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc) {
@@ -8,8 +7,26 @@ class ActionProvider {
 
 
   handleBotAnswer = (answer) => {
-    const message = this.createChatBotMessage(answer);
-    this.addMessageToState(message);
+    console.log(answer)
+    if(answer === 'pos'){
+      const Sentiment = "คุณกำลังอารมณ์ดี (Positive)"
+      const message = this.createChatBotMessage(Sentiment);
+      this.addMessageToState(message);
+    }
+    else if(answer === 'neg'){
+      const Sentiment = "คุณกำลังอารมณ์ไม่ดี (Negative)"
+      const message = this.createChatBotMessage(Sentiment);
+      this.addMessageToState(message);
+    }
+    else if(answer === 'neu'){
+      const Sentiment = "อารมณ์ของคุณเป็นปกติ (Neutral)"
+      const message = this.createChatBotMessage(Sentiment);
+      this.addMessageToState(message);
+    }
+    else{
+      const message = this.createChatBotMessage(answer);
+      this.addMessageToState(message);
+    }
   };
 
   addMessageToState = (message) => {

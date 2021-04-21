@@ -1,64 +1,168 @@
-.ImageUploadContainer{
-    position: absolute;
-    display: block;
-    z-index: 1;
-    top: 40.5vw;
-    left: 54vw;
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ImageUploadBakeryContainer{
+    background-color: #621708;
+    text-align: center;
+    width: 42.3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 5.8vw;
+    margin-top: -2.2vw;
+    border-radius: 0.5vw;
+}
+.ImageUploadThCashContainer{
+    background-color: #621708;
+    text-align: center;
+    width: 42.1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 5.8vw;
+    margin-top: -2.2vw;
+    border-radius: 0.5vw;
+}
+.ImageUploadAmuletContainer{
+    background-color: #621708;
+    text-align: center;
+    width: 49.4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 5.8vw;
+    margin-top: -2.2vw;
+    border-radius: 0.5vw;
 }
 .UploadButton{  
-    width: 3vw;
     border: none;
     outline:none;
     cursor: pointer;
+    text-align: center;
+    display: inline;
+    vertical-align: middle;
+    width: 4vw;
+}
+.CancelButton{  
+    border: none;
+    outline:none;
+    cursor: pointer;
+    text-align: center;
+    display: inline;
+    vertical-align: middle;
+    width: 3.5vw;
+    margin-left: 2vw;
+    margin-top: -0.3vw;
 }
 .ImagePreviewContainer{
-    position: absolute;
-    display: block;
-    z-index: 1;
-    top: 29vw;
-    left: 0vw;
-    background-color: #e68554; 
-    height: 10vw;
-    width: 68vw;
-    white-space: nowrap;
-    
+    text-align: center;
 }
 .ImagePreview{
-    margin: 1vw 1vw 1vw 2.2vw;
+    display: inline-block;
     height: 8vw; 
-    float: left;
+    margin: auto;
+    vertical-align: middle;
 }
-section {
-  clear: both;
+.ImageButton{
+    display: inline-block; 
+    margin: auto;
+    vertical-align: middle;
+    margin-left: 2vw;
 }
-
 .ImageButton_C{
-    position:relative;
     display: inline;
     margin-left: 1vw;
-    top: 3.2vw;
-    width: 4vw;
+    width: 3.5vw;
 }
 .ImageButton_R{
-    position: relative;
     display: inline;
-    top: 3.2vw;
     margin-left: 1vw;
-    width: 4vw;
+    width: 3.5vw;
 }
-.ImageChatContainer{
-    display: flex;
-    margin: 15px 0;
-    justify-content: flex-end;
+@media only screen and (max-width: 768px) {
+    .options-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ImageUploadBakeryContainer{
+        background-color: #621708;
+        text-align: center;
+        width: 59vw;
+        padding-top: 1vw;
+        padding-bottom: 3vw;
+        margin-left: 11.2vw;
+        margin-top: -6vw;
+        border-radius: 1.5vw;
+        z-index: 1;
+    }
+    .ImageUploadThCashContainer{
+        background-color: #621708;
+        text-align: center;
+        width: 59vw;
+        padding-top: 1vw;
+        padding-bottom: 3vw;
+        margin-left: 11.2vw;
+        margin-top: -6vw;
+        border-radius: 1.5vw;
+        z-index: 1;
+    }
+    .ImageUploadAmuletContainer{
+        background-color: #621708;
+        text-align: center;
+        width: 59vw;
+        padding-top: 1vw;
+        padding-bottom: 3vw;
+        margin-left: 11.2vw;
+        margin-top: -6vw;
+        border-radius: 1.5vw;
+        z-index: 1;
+    }
+    .UploadButton{  
+        border: none;
+        outline:none;
+        cursor: pointer;
+        text-align: center;
+        display: inline;
+        vertical-align: middle;
+        width: 6vw;
+    }
+    .CancelButton{  
+        border: none;
+        outline:none;
+        cursor: pointer;
+        text-align: center;
+        display: inline;
+        vertical-align: middle;
+        width: 5.5vw;
+        margin-left: 5vw;
+        margin-top: -0.5vw;
+    }
+    .ImagePreviewContainer{
+        text-align: center;
+    }
+    .ImagePreview{
+        display: inline-block;
+        height: 15vw; 
+        margin: auto;
+        vertical-align: middle;
+    }
+    .ImageButton{
+        display: inline-block; 
+        margin: auto;
+        vertical-align: middle;
+        margin-left: 2vw;
+    }
+    .ImageButton_C{
+        display: inline;
+        margin-left: 1vw;
+        width: 5vw;
+    }
+    .ImageButton_R{
+        display: inline;
+        margin-left: 3vw;
+        width: 5vw;
+    }
+    .ImageChatContainer{
+        display: flex;
+        margin: 15px 0;
+        justify-content: flex-end;
+    }
 }
-.ImageChatList{
-    right: 5vw;
-}
-.ImageChat{
-    position: relative;
-    display: flex;
-    background-color: #E57A44;
-    padding: 1vw;
-    width: 20vw;
-}
-

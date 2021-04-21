@@ -5,18 +5,21 @@ class MessageParser {
   }
   
   parse(message) {
-    console.log(message);
-    const formData = new FormData();
-    formData.append("text", message);
-    //axios.post(`http://35.247.150.245:8000/process_image/`,formData)
-    axios.post(`http://127.0.0.1:8000/nlp_test/`,formData)
-    .then((res) => {
-      this.actionProvider.handleBotAnswer("Result is "+res.data.result)
-      console.log(res)
-    })
-    .catch((error) => {
-      this.actionProvider.handleBotAnswer("Error !!")
-    })
+    if(message === 'เบเกอรี่' || message === 'ธนบัตรไทย' || message === 'พระเครื่อง'){
+      this.actionProvider.handleBotFeatures(message)
+    }
+    else{
+      const formData = new FormData();
+      formData.append("text", message);
+      axios.post(`http://35.247.150.245:8000/buai-nlp-sentiment-chatbot/`,formData)
+      .then((res) => {
+        this.actionProvider.handleBotAnswer(res.data.result)
+      })
+      .catch((error) => {
+        this.actionProvider.handleBotAnswer("เกิดข้อผิดพลาด")
+      })
+    }
+    
   }
 }
 export default MessageParser;

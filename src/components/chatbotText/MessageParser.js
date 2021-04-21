@@ -8,13 +8,12 @@ class MessageParser {
     console.log(message);
     const formData = new FormData();
     formData.append("text", message);
-    axios.post(`http://35.247.150.245:8000/nlp_test/`,formData)
+    axios.post(`http://35.247.150.245:8000/buai-nlp-sentiment-chatbot/`,formData)
     .then((res) => {
-      this.actionProvider.handleBotAnswer("Result is "+res.data.result)
-      console.log(res)
+      this.actionProvider.handleBotAnswer(res.data.result)
     })
     .catch((error) => {
-      this.actionProvider.handleBotAnswer("Error !!")
+      this.actionProvider.handleBotAnswer("เกิดข้อผิดพลาด")
     })
   }
 }

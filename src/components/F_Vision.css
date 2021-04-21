@@ -1,0 +1,338 @@
+.VisionHead{
+    text-align: center;
+    margin:  8vw 0 2vw 0;
+}
+.VisionHead h1{
+    display: inline;
+    font-family: 'Pridi', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #621708;
+    text-align: center;
+}
+.VisionLineH{
+    width: 21.8vw;
+    position: relative;
+    border-bottom: #E57A44;
+    text-align: center;
+    border-style: solid;
+    border-width: 0 0 0.5vw 0;
+    margin: auto;
+}
+.VisionInfoButton{
+    position: absolute;
+    display: inline;
+    float: none;
+    top: 15.3vw;
+    margin: 0 0 0 1vw;
+    height: 3vw;
+}
+.VisionInfoContainer{
+    position: relative;
+    display: block; 
+    margin-top: -1.5vw;
+    background-color: #022B3A;
+    border-style: none;
+    border-radius: 2vw;
+    border-top-right-radius: 0vw;
+    width: 40vw; 
+}
+.VisionInfoHead{
+    position: relative;
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 2vw;
+    padding-left: 5vw;
+}
+.VisionInfoHeads{
+    position: relative;
+    font-family: 'Pridi', serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 5vw;
+    margin-top: -2vw;
+}
+.VisionInfoText{
+    position: relative;
+    width: 30vw;
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 0 0 3vw 5vw;
+}
+.VisionContainer{
+    position: relative;
+    display: block; 
+    margin: auto;
+    margin-top: 0vw;
+    margin-bottom: 8vw;
+    background-color: #FFEED2;
+    border-style: none;
+    border-radius: 2vw;
+    width: 70vw; 
+    padding-top: 3vw;
+}
+.VisionImage{
+    position: relative;
+    display: block; 
+    height: 20vw;
+    margin: auto;
+    padding-bottom: 3vw;
+}
+.VisionImagePreview{
+    position: relative;
+    display: block; 
+    height: 20vw;
+    margin: auto;
+    padding-bottom: 3vw;
+}
+.VisionButton{
+    text-align: center;
+    padding-bottom: 3vw;
+}
+.VisionButton img{
+    display: inline; 
+    width: 20vw;
+    margin: auto;
+    padding:  0vw 5vw;
+}
+.VisionLoading{
+    width: 20vw;
+    position: absolute;
+    display: block; 
+    top: 13vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.VisionPrevious{
+    width: 2vw;
+    position: absolute;
+    display: block; 
+    top: 1vw;
+    right: 1vw;
+    padding: 1vw;
+    border-radius: 50vw;
+    background: rgb(252,121,54);
+    background: linear-gradient(225deg, rgba(252,121,54,1) 10%, rgba(194,47,13,1) 90%);
+}
+.VisionPrevious:hover{
+    background: rgb(252,121,54);
+    background: linear-gradient(45deg, rgba(252,121,54,1) 10%, rgba(194,47,13,1) 90%);
+}
+ul {
+    position: relative;
+    list-style-type: none;
+    background-color: #FFEED2;
+    text-align: center;
+    border-radius: 2vw;
+    margin-top: 0;
+    margin: auto;
+    padding-bottom: 2.5vw;   
+}
+li{
+    font-family: 'Pridi', serif;
+    font-weight: 300;
+    font-size: 2vw;
+    color: #ffffff;
+    text-align: left;
+    background-color: #E57A44;
+    border-style: none;
+    padding: 0.5vw;
+    padding-left: 5vw;
+    margin: auto;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+}
+.ShowResultBakery{
+    text-align: center;
+    padding-right: 18vw;
+    padding-left: 15.5vw;
+}
+.ShowResultDetect{
+    text-align: center;
+    padding-right: 17vw;
+    padding-left: 14.5vw;
+}
+.ShowResultAmulet{
+    text-align: center;
+    padding-right: 14.5vw;
+    padding-left: 11vw;
+}
+@media only screen and (max-width: 768px) {
+    .VisionHead{
+        text-align: center;
+        margin:  11vw 0 4vw 0;
+    }
+    .VisionHead h1{
+        display: inline;
+        font-family: 'Pridi', serif;
+        font-weight: 700;
+        font-size: 4vw;
+        color: #621708;
+        text-align: center;
+    }
+    .VisionLineH{
+        width: 22vw;
+        position: relative;
+        border-bottom: #E57A44;
+        text-align: center;
+        border-style: solid;
+        border-width: 0 0 0.8vw 0;
+        margin: auto;
+    }
+    .VisionInfoButton{
+        position: absolute;
+        display: inline;
+        float: none;
+        top: 21vw;
+        margin: 0 0 0 1vw;
+        height: 4vw;
+    }
+    .VisionInfoContainer{
+        position: relative;
+        display: block; 
+        margin-top: -1.5vw;
+        background-color: #022B3A;
+        border-style: none;
+        border-radius: 2vw;
+        border-top-right-radius: 0vw;
+        width: 50vw; 
+    }
+    .VisionInfoHead{
+        position: relative;
+        font-family: 'Pridi', serif;
+        font-weight: 500;
+        font-size: 3vw;
+        color: #ffffff;
+        text-align: left;
+        padding-top: 2vw;
+        padding-left: 5vw;
+    }
+    .VisionInfoHeads{
+        position: relative;
+        font-family: 'Pridi', serif;
+        font-weight: 500;
+        font-size: 3vw;
+        color: #ffffff;
+        text-align: left;
+        padding-left: 5vw;
+        margin-top: -2vw;
+    }
+    .VisionInfoText{
+        position: relative;
+        width: 40vw;
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 2vw;
+        color: #ffffff;
+        text-align: justify;
+        word-wrap: break-word;
+        padding: 0 0 3vw 5vw;
+    }
+    .VisionContainer{
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: auto; 
+        background-color: #FFEED2;
+        border-style: none;
+        border-radius: 2vw;
+        width: 90vw;
+        left: 0; 
+        padding-bottom: 0vw;
+        margin-bottom: 12vw;
+    }
+    .VisionImage{
+        position: relative;
+        display: block; 
+        height: 30vw;
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+        margin: auto;
+    }
+    .VisionImagePreview{
+        position: relative;
+        display: block; 
+        height: 30vw;
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+        margin: auto;
+    }
+    .VisionButton{
+        text-align: center;
+        margin-top: -4vw;
+    }
+    .VisionButton img{
+        display: inline; 
+        width: 25vw;
+        margin: auto;
+        padding: 5vw;
+        padding-bottom: 3vw;
+    }
+    .VisionLoading{
+        width: 30vw;
+        position: absolute;
+        display: block; 
+        top: 21vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .VisionPrevious{
+        width: 3vw;
+        position: absolute;
+        display: block; 
+        top: 1.5vw;
+        right: 1.5vw;
+        padding: 1.5vw;
+        border-radius: 50vw;
+        background: rgb(252,121,54);
+        background: linear-gradient(225deg, rgba(252,121,54,1) 10%, rgba(194,47,13,1) 90%);
+    }
+    .VisionPrevious:hover{
+        background: rgb(252,121,54);
+        background: linear-gradient(45deg, rgba(252,121,54,1) 10%, rgba(194,47,13,1) 90%);
+    }
+    ul {
+        position: relative;
+        display: block; 
+        list-style-type: none;
+        background-color: #FFEED2;
+        border-radius: 2vw;
+        margin: auto;
+    }
+    li{
+        position: relative;
+        display: block; 
+        font-family: 'Pridi', serif;
+        font-weight: 300;
+        font-size: 2.5vw;
+        color: #ffffff;
+        text-align: left;
+        padding: 1vw 5vw 1vw;
+        background-color: #E57A44;
+        border-style: none;
+    }
+    .ShowResultBakery{
+        text-align: center;
+        padding-right: 25.5vw;
+        padding-left: 20vw;
+    }
+    .ShowResultDetect{
+        text-align: center;
+        padding-right: 23vw;
+        padding-left: 17.5vw;
+    }
+    .ShowResultAmulet{
+        text-align: center;
+        padding-right: 19vw;
+        padding-left: 13.5vw;
+    }
+}

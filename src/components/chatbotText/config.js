@@ -2,9 +2,9 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import ChatBotAvatar from "./ChatBotAvatar";
 
 const config = {
-  botName: "NLP_Bot",
+  botName: "Sentiment Chatbot",
   initialMessages: [
-    createChatBotMessage(`Please, type the word you want to test for NLP.`, {
+    createChatBotMessage(`สวัสดีครับ ผมคือ Sentiment bot ที่จะมาวิเคราะห์ความรู้สึกของคุณผ่านข้อความนะครับ กรุณาส่งข้อความ`, {
     }),
   ],
   customComponents: {
