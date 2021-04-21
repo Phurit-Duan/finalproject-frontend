@@ -1,23 +1,24 @@
 .MenuImage{
     position: absolute;
     width: 15vw;
-    top: 0.8vw;
+    top: 0.6vw;
     left: 1vw;
     cursor: pointer;
 }
 .MenuImageHome{
     position: absolute;
     width: 15vw;
-    top: 0.8vw;
+    top: 0.6vw;
     left: 1vw;
 }
 .MenuBar{
     background-color: #f2cc8f;
     position: absolute;
-    width: 87.5vw;
+    width: 89.5vw;
     height: 4.5vw;
     top: 1vw;
     right: 0vw;
+    border-top-left-radius: 3vw;
 }
 p{
     font-family: 'Pridi', serif;
@@ -93,8 +94,12 @@ p{
     cursor: default;   
 }  
 @media only screen and (max-width: 768px) {
-    .MenuImage{width: 30vw;}
-    .MenuBar{height: 7vw;}
+    .MenuImage,.MenuImageHome{width: 20vw;}
+    .MenuBar{
+        height: 7vw; 
+        width: 86.5vw;
+        border-top-left-radius: 4vw;
+    }
     p{
         font-size: 2.5vw;
     }
