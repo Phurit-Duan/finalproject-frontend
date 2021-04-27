@@ -58,10 +58,12 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div className="Footer">
-        <h1>Supported by</h1>
-        <p>- Faculty of Engineering, Bangkok University</p>
-        <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div className="Footer-HD">
+        <div className="Footer">
+          <h1>Supported by</h1>
+          <p>- Faculty of Engineering, Bangkok University</p>
+          <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
       </div>
     </div>
   );

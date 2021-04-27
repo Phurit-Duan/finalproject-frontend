@@ -6,7 +6,7 @@ import './MenuBar.css';
 
 function MenuBar() {
     return (
-        <div className="Container">
+        <div>
             <label className="MenuBar"></label>
             <Link to="/">
                 <img src={MenuImage} className="MenuImage" alt="MenuImage" 
@@ -14,7 +14,7 @@ function MenuBar() {
                 onMouseOut={(e) => (e.currentTarget.src = MenuImage)} />
                 <p className="MenuHome">Home</p>
             </Link>
-            <Link to="//api-for-developer">
+            <Link to="/api-for-developer">
                 <p className="MenuDevelope">API</p>
             </Link>   
             <Link to="/About-us">

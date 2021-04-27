@@ -1,13 +1,9 @@
 import axios from "axios";
-import Popup from 'reactjs-popup';
 import React, { useState } from "react";
 
 import "./F_Vision.css";
 import "./Footer.css";
-
 import MenuBar from "./MenuBar";
-import Info_1 from "./images/Information_1.svg";
-import Info_2 from "./images/Information_2.svg";
 import VisionImage from "./images/Vision-Image.svg";
 import VisionButton_U1 from "./images/Vision-Button-U1.png";
 import VisionButton_U2 from "./images/Vision-Button-U2.png";
@@ -109,21 +105,16 @@ function Classify (){
             <MenuBar/>
             <div className="VisionHead">
                 <h1>Bakery Classification</h1>
-                <Popup trigger={<img src={Info_1} alt="" className="VisionInfoButton" 
-                    onMouseOver={(e) => (e.currentTarget.src = Info_2)} 
-                    onMouseOut ={(e) => (e.currentTarget.src = Info_1)}/>} 
-                    position="left top">
-                    <div className="VisionInfoContainer">
-                        <h1 className="VisionInfoHead">Bakery Classification</h1>
-                        <div className="VisionInfoText">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            คือ Feature ที่ใช้ Image Classification ในการจำแนกขนมเบเกอรี่ทั้งหมด
-                            6 ชนิด ได้แก่ ครัวซองต์ (Croissant), โดนัท (Doughnut), ฮอตดอก (Hot
-                            dog), มัฟฟิน (Muffin), เค้ก (Cake) และพาย (Pie) ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
-                        </div>
-                    </div>
-                </Popup>
                 <p className="VisionLineH"></p>
+            </div>
+            <div className="VisionInfoContainer">
+                <h1 className="VisionInfoHead">Bakery Classification</h1>
+                <div className="VisionInfoText">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    คือ Feature ที่ใช้ Image Classification ในการจำแนกขนมเบเกอรี่ทั้งหมด
+                    6 ชนิด ได้แก่ ครัวซองต์ (Croissant), โดนัท (Doughnut), ฮอตดอก (Hot
+                    dog), มัฟฟิน (Muffin), เค้ก (Cake) และพาย (Pie) ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
+                </div>
             </div>
             <div className="VisionContainer">
                 { showImage ? <VisionImages /> : null }
@@ -142,12 +133,13 @@ function Classify (){
                 { showLoading ? <ShowLoading /> : null }
                 { showResults ? <ShowResults /> : null }
             </div>
+            <div className="Footer-V">
             <div className="Footer">
-                <label></label>
                 <h1>Supported by</h1>
                 <p>- Faculty of Engineering, Bangkok University</p>
                 <div>- The icon "Magnify" is provided by <a href="https://loading.io/icon/" title="Freepik">loading.io</a></div>
                 <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
             </div>
         </div>
     );

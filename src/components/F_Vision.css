@@ -19,54 +19,38 @@
     border-width: 0 0 0.5vw 0;
     margin: auto;
 }
-.VisionInfoButton{
-    position: absolute;
-    display: inline;
-    float: none;
-    top: 15.3vw;
-    margin: 0 0 0 1vw;
-    height: 3vw;
-}
 .VisionInfoContainer{
     position: relative;
     display: block; 
-    margin-top: -1.5vw;
-    background-color: #022B3A;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    background-color: #621708;
     border-style: none;
     border-radius: 2vw;
-    border-top-right-radius: 0vw;
-    width: 40vw; 
+    width: 70vw; 
 }
 .VisionInfoHead{
     position: relative;
     font-family: 'Pridi', serif;
     font-weight: 500;
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: #ffffff;
     text-align: left;
-    padding-top: 2vw;
-    padding-left: 5vw;
-}
-.VisionInfoHeads{
-    position: relative;
-    font-family: 'Pridi', serif;
-    font-weight: 500;
-    font-size: 2.5vw;
-    color: #ffffff;
-    text-align: left;
-    padding-left: 5vw;
-    margin-top: -2vw;
+    padding-top: 1vw;
+    padding-left: 3vw;
 }
 .VisionInfoText{
     position: relative;
-    width: 30vw;
+    width: 64vw;
     font-family: 'Pridi', serif;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #ffffff;
     text-align: justify;
     word-wrap: break-word;
-    padding: 0 0 3vw 5vw;
+    margin-top: -1vw;
+    padding: 0 0 1.5vw 3vw;
 }
 .VisionContainer{
     position: relative;
@@ -166,7 +150,7 @@ li{
     padding-right: 14.5vw;
     padding-left: 11vw;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .VisionHead{
         text-align: center;
         margin:  11vw 0 4vw 0;
@@ -188,23 +172,9 @@ li{
         border-width: 0 0 0.8vw 0;
         margin: auto;
     }
-    .VisionInfoButton{
-        position: absolute;
-        display: inline;
-        float: none;
-        top: 21vw;
-        margin: 0 0 0 1vw;
-        height: 4vw;
-    }
     .VisionInfoContainer{
-        position: relative;
-        display: block; 
-        margin-top: -1.5vw;
-        background-color: #022B3A;
-        border-style: none;
-        border-radius: 2vw;
-        border-top-right-radius: 0vw;
-        width: 50vw; 
+        margin-bottom: 4vw;
+        width: 90vw; 
     }
     .VisionInfoHead{
         position: relative;
@@ -214,28 +184,18 @@ li{
         color: #ffffff;
         text-align: left;
         padding-top: 2vw;
-        padding-left: 5vw;
-    }
-    .VisionInfoHeads{
-        position: relative;
-        font-family: 'Pridi', serif;
-        font-weight: 500;
-        font-size: 3vw;
-        color: #ffffff;
-        text-align: left;
-        padding-left: 5vw;
-        margin-top: -2vw;
+        padding-left: 3vw;
     }
     .VisionInfoText{
         position: relative;
-        width: 40vw;
+        width: 84vw;
         font-family: 'Pridi', serif;
         font-weight: 300;
         font-size: 2vw;
         color: #ffffff;
         text-align: justify;
         word-wrap: break-word;
-        padding: 0 0 3vw 5vw;
+        padding: 0 0 3vw 3vw;
     }
     .VisionContainer{
         position: relative;
@@ -248,7 +208,7 @@ li{
         width: 90vw;
         left: 0; 
         padding-bottom: 0vw;
-        margin-bottom: 12vw;
+        margin-bottom: 15vw;
     }
     .VisionImage{
         position: relative;

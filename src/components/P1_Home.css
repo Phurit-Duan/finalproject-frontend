@@ -231,6 +231,7 @@
         display: inline-block;
         cursor: pointer;
         margin-left: 10vw;
+        margin-bottom: 5vw;
     }
     .HomeConver p{
         font-size: 3vw;
