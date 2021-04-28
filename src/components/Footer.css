@@ -1,6 +1,7 @@
 .Footer{
     clear: both;
     position: relative;
+    display: block;
     height: 3.5vw;
     margin-top: -3.5vw;
     padding: 0.5vw 2vw 1.5vw;
