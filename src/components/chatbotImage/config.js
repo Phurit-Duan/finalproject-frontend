@@ -5,12 +5,11 @@ import ImageUploadThCash from "./ImageUploadThCash";
 import ImageUploadAmulet from "./ImageUploadAmulet";
 const config = {
   state: {
-    src: "",
-    alt: "",
+    sentiment: false
   },
   botName: "Inclusive Bot",
   initialMessages: [
-    createChatBotMessage(`สวัสดีครับ ผมคือ Inclusive bot ที่มีหลาย Features รวมอยู่ในตัว หากคุณต้องการใช้งาน Feature กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง`, {
+    createChatBotMessage(`สวัสดีครับ ผมคือ Inclusive bot ที่มีหลาย Features รวมอยู่ในตัว หากคุณต้องการใช้งาน Feature กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ อารมณ์`, {
     })
   ],
   widgets: [

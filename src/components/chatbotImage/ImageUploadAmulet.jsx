@@ -13,12 +13,13 @@ const ImageUploadAmulet = (props) => {
   const ImageList = [{src: "", alt:""}];
   const [Image, setImage] = useState({ preview: "", raw: "" ,name: ""});
   const [showButton, setShowButton] = React.useState(true)
+  const [showButtons, setShowButtons] = React.useState(true)
 
   const ImageUpload = [
     {
-      text: "upload-button",
+      text: "upload-button-amulet",
       handler: props.actionProvider.createClientMesssage,
-      id: "upload-button",
+      id: "upload-button-amulet",
     }
   ];
 
@@ -54,13 +55,15 @@ const ImageUploadAmulet = (props) => {
   }
 
   const handleUpload = e => {
+    setShowButtons(false)
     e.preventDefault();
     const ClientMesssage = props.actionProvider.createClientMesssage("อัปโหลดรูปภาพ : "+Image.name)
     props.actionProvider.setClientMessage(ClientMesssage)
     const formData = new FormData();
     formData.append("image", Image.raw);
     axios.post(`http://35.247.150.245:8000/buai-amulet-process-image/`,formData)
-    .then(res => { 
+    .then(res => {
+      setImage({preview: "", raw: "",name: ""}); 
       var result = ""
       if(res.data.result[0][0] === 'LPS17')
         result = "หลวงพ่อสุดเสือเผ่น 2517"
@@ -74,25 +77,24 @@ const ImageUploadAmulet = (props) => {
         result = "หลวงพ่อสุดเสือเผ่นน้อย"
       ImageList.push({src: Image.raw, alt: Image.name})
       props.actionProvider.handleBotAnswer("รูปนี้คือรูปพระเครื่องรุ่น "+result+" มีความแม่นยำเป็น "+res.data.result[0][2]+" %")
-      setImage({preview: "", raw: "",name: ""});
     })
     .catch((error) => {
+      setImage({preview: "", raw: "",name: ""});
       const clientMessage = props.actionProvider.createClientMesssage("เกิดข้อผิดพลาด")
       props.actionProvider.setClientMessage(clientMessage)
       props.actionProvider.handleBotAnswer("ไม่สามารถทำ Buddhist Amulet Classification ได้")
-      setImage({preview: "", raw: "",name: ""});
     })
   };
 
   const UploadPreview = () => (
     <div>
       <input 
-        id="upload-button" 
+        id="upload-button-amulet" 
         type="file" 
         style={{ display: "none" }}
         onChange={handleChange}
       />  
-      <label htmlFor="upload-button">
+      <label htmlFor="upload-button-amulet">
         <img src={UploadButton2} className="UploadButton" alt=""
         onMouseOver={(e) => (e.currentTarget.src = UploadButton1)}
         onMouseOut={(e) => (e.currentTarget.src = UploadButton2)}>   
@@ -126,7 +128,7 @@ const ImageUploadAmulet = (props) => {
         {Image.preview ? (
           <div className="ImagePreviewContainer">
             <img src={Image.preview} alt="" className="ImagePreview"/>
-            <div className="ImageButton"><ShowButtons/></div>
+            {showButtons ? <div className="ImageButton"><ShowButtons/></div> :null}
           </div> ) : null 
         }
       </div>

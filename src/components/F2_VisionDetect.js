@@ -59,10 +59,11 @@ function Detect (){
                 console.log("Thcash "+Thcash)
                 console.log(number+" "+Thcash)
                 if(res.data.result.length === 1){
-                    initialResult.push("ธนบัตร "+Thcash+" บาท จำนวน "+number+" ใบ")
+                    initialResult.push(`ธนบัตร ${Thcash} บาท จำนวน ${number} ใบ`)
                 } 
-                else
-                    initialResult.push(length + ". " + "ธนบัตร "+Thcash+" บาท จำนวน "+number+" ใบ")
+                else{
+                    initialResult.push(`${length} . ธนบัตร ${Thcash} บาท จำนวน ${number} ใบ`)
+                }
                 ++length;
             }
             setResult(Result.concat(initialResult));
