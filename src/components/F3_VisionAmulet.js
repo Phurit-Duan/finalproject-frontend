@@ -50,18 +50,18 @@ function Amulet (){
             console.log(res.data);
             console.log(res.data.result[0][0]); 
             setShowLoading(false);
-            for(var i=1;i<=Object.keys(res.data.result).length;i++){
-                console.log(i)
-                if(res.data.result[i-1][0] === 'LPS17')
-                    initialResult.push(i+ ". หลวงพ่อสุดเสือเผ่น 2517"+" : "+res.data.result[i-1][2]+" %")
-                else if(res.data.result[i-1][0] === 'LPS21')
-                    initialResult.push(i+ ". หลวงพ่อสุดเสือเผ่น 2521"+" : "+res.data.result[i-1][2]+" %")
-                else if(res.data.result[i-1][0] === 'LPS23')
-                    initialResult.push(i+ ". หลวงพ่อสุดเสือเผ่น 2523"+" : "+res.data.result[i-1][2]+" %")
-                else if(res.data.result[i-1][0] === 'LPS59')
-                    initialResult.push(i+ ". หลวงพ่อสุดเสือเผ่น 2559"+" : "+res.data.result[i-1][2]+" %")
-                else if(res.data.result[i-1][0] === 'LPSN')
-                    initialResult.push(i+ ". หลวงพ่อสุดเสือเผ่นน้อย"+" : "+res.data.result[i-1][2]+" %")
+            for(var no=1;no<=Object.keys(res.data.result).length;no++){
+                console.log(no)
+                if(res.data.result[no-1][0] === 'LPS17')
+                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2517 : ${res.data.result[no-1][2]} %`)
+                else if(res.data.result[no-1][0] === 'LPS21')
+                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2521 : ${res.data.result[no-1][2]} %`)
+                else if(res.data.result[no-1][0] === 'LPS23')
+                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2523 : ${res.data.result[no-1][2]} %`)
+                else if(res.data.result[no-1][0] === 'LPS59')
+                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2529 : ${res.data.result[no-1][2]} %`)
+                else if(res.data.result[no-1][0] === 'LPSN')
+                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่นน้อย : ${res.data.result[no-1][2]} %`)
             }
             setResult(Result.concat(initialResult));
             setShowResults(true);

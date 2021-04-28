@@ -13,12 +13,13 @@ const ImageUploadBakery = (props) => {
   const ImageList = [{src: "", alt:""}];
   const [Image, setImage] = useState({ preview: "", raw: "" ,name: ""});
   const [showButton, setShowButton] = React.useState(true)
+  const [showButtons, setShowButtons] = React.useState(true)
 
   const ImageUpload = [
     {
-      text: "upload-button",
+      text: "upload-button-bakery",
       handler: props.actionProvider.createClientMesssage,
-      id: "upload-button",
+      id: "upload-button-bakery",
     }
   ];
 
@@ -54,6 +55,7 @@ const ImageUploadBakery = (props) => {
   }
 
   const handleUpload = e => {
+    setShowButtons(false)
     e.preventDefault();
     const ClientMesssage = props.actionProvider.createClientMesssage("อัปโหลดรูปภาพ : "+Image.name)
     props.actionProvider.setClientMessage(ClientMesssage)
@@ -61,27 +63,28 @@ const ImageUploadBakery = (props) => {
     formData.append("image", Image.raw);
     axios.post(`http://35.247.150.245:8000/buai-bakery-process-image/`,formData)
     .then(res => { 
+      setImage({preview: "", raw: "",name: ""});
       ImageList.push({src: Image.raw, alt: Image.name})
       props.actionProvider.handleBotAnswer("รูปนี้คือรูป "+res.data.result[0][1]+" มีความแม่นยำเป็น "+res.data.result[0][2]+" %")
       setImage({preview: "", raw: "",name: ""});
     })
     .catch((error) => {
+      setImage({preview: "", raw: "",name: ""});
       const clientMessage = props.actionProvider.createClientMesssage("เกิดข้อผิดพลาด")
       props.actionProvider.setClientMessage(clientMessage)
-      props.actionProvider.handleBotAnswer("ไม่สามารถทำ Bakery Classification ได้")
-      setImage({preview: "", raw: "",name: ""});
+      props.actionProvider.handleBotAnswer("ไม่สามารถทำ Bakery Classification ได้")  
     })
   };
 
   const UploadPreview = () => (
     <div>
       <input 
-        id="upload-button" 
+        id="upload-button-bakery" 
         type="file" 
         style={{ display: "none" }}
         onChange={handleChange}
       />  
-      <label htmlFor="upload-button">
+      <label htmlFor="upload-button-bakery">
         <img src={UploadButton2} className="UploadButton" alt=""
         onMouseOver={(e) => (e.currentTarget.src = UploadButton1)}
         onMouseOut={(e) => (e.currentTarget.src = UploadButton2)}>   
@@ -115,7 +118,7 @@ const ImageUploadBakery = (props) => {
         {Image.preview ? (
           <div className="ImagePreviewContainer">
             <img src={Image.preview} alt="" className="ImagePreview"/>
-            <div className="ImageButton"><ShowButtons/></div>
+            {showButtons ? <div className="ImageButton"><ShowButtons/></div> :null}
           </div> ) : null 
         }
       </div>

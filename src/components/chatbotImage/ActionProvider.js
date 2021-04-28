@@ -1,10 +1,71 @@
+import axios from 'axios';
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc) {
     this.createChatBotMessage = createChatBotMessage;
     this.setState = setStateFunc;
+
+  }
+  handleBotAnswer = (answer) => {
+      const message = this.createChatBotMessage(answer);
+      this.addMessageToState(message);
+  };
+
+  checkFeature = (message) => {
+    this.setState(state => {
+      if (!state.sentiment) {
+        if(message === 'เบเกอรี่' || message === 'ธนบัตรไทย' || message === 'พระเครื่อง'){
+          this.handleBotFeatures(message)
+          this.setStateSentiment(false)
+        }
+        else if(message === 'อารมณ์'){
+          this.handleBotAnswer("คุณต้องการทำ Sentiment Analysis นะครับ กรุณาข้อความเพื่อวัดระดับอารมณ์ของคุณ และหากคุณต้องการกลับไปที่เมนู กรุณาพิมพ์ว่า กลับเมนู ")
+          
+        }
+        else{
+          this.handleBotAnswer("คุณพิมพ์ผิดหรือเปล่านะ ?")
+          this.setStateSentiment(false)
+        }
+      }
+      else{
+        if(message === 'กลับเมนู'){
+          this.handleBotAnswer("คุณกลับมาเมนูของข้อความแล้ว ! กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ อารมณ์ เพื่อใช้งาน Feature")
+          this.setStateSentiment(false)
+        }
+        else {
+          const formData = new FormData();
+          formData.append("text", message);
+          axios.post(`http://35.247.150.245:8000/buai-nlp-sentiment-chatbot/`,formData)
+          .then((res) => {
+            this.handleBotSentiment(res.data.result)
+          })
+          .catch((error) => {
+            this.handleBotAnswer("เกิดข้อผิดพลาด")
+          })
+        }
+      }
+      return state
+    })
   }
 
-  handleBotAnswer = (answer) => {
+  handleBotFeatures = (text) => {
+    if(text === 'เบเกอรี่'){
+      const message = this.createChatBotMessage("คุณต้องการทำ Bakery Classification นะครับ กรุณาอัปโหลดรูปภาพ",
+        {widget: "ImageUploadBakery"});
+      this.addMessageToState(message);
+    }
+    else if(text === 'ธนบัตรไทย'){
+      const message = this.createChatBotMessage("คุณต้องการทำ Thai Cash Detection นะครับ กรุณาอัปโหลดรูปภาพ",
+        {widget: "ImageUploadThCash"});
+      this.addMessageToState(message);
+    }
+    else if(text === 'พระเครื่อง'){
+      const message = this.createChatBotMessage("คุณต้องการทำ Buddhist Amulet Classification นะครับ กรุณาอัปโหลดรูปภาพ",
+        {widget: "ImageUploadAmulet"});
+      this.addMessageToState(message);
+    }
+  };
+
+  handleBotSentiment = (answer) => {
     if(answer === 'pos'){
       const Sentiment = "คุณกำลังอารมณ์ดี (Positive)"
       const message = this.createChatBotMessage(Sentiment);
@@ -26,29 +87,6 @@ class ActionProvider {
     }
   };
 
-  handleBotFeatures = (text) => {
-    if(text === 'เบเกอรี่'){
-      const message = this.createChatBotMessage("คุณต้องการทำ Bakery Classification นะครับ กรุณาอัปโหลดรูปภาพ",
-        {widget: "ImageUploadBakery"});
-      this.addMessageToState(message);
-    }
-    else if(text === 'ธนบัตรไทย'){
-      const message = this.createChatBotMessage("คุณต้องการทำ Thai Cash Detection นะครับ กรุณาอัปโหลดรูปภาพ",
-        {widget: "ImageUploadThCash"});
-      this.addMessageToState(message);
-    }
-    else if(text === 'พระเครื่อง'){
-      const message = this.createChatBotMessage("คุณต้องการทำ Buddhist Amulet Classification นะครับ กรุณาอัปโหลดรูปภาพ",
-        {widget: "ImageUploadAmulet"});
-      this.addMessageToState(message);
-    }
-  };
-
-  handleImage = (src, alt) => {
-    const message = this.createChatBotMessage("Here's your image:",{widget: "ImageWidget"});
-    this.setState(prev => ({ ...prev, messages: [...prev.messages, message], src, alt }))
-  }
-
   createClientMesssage = (message) => {
     const clientMessage = {
            message: message,
@@ -58,12 +96,17 @@ class ActionProvider {
     return clientMessage
   }
 
+  setStateSentiment = (sentiment) => {
+    this.setState(prevState => ({
+        ...prevState, messages: [...prevState.messages],sentiment
+    }))
+  }
+
   setClientMessage = (clientMessage) => {
     this.setState(prevState => ({
         ...prevState, messages: [...prevState.messages, clientMessage]
     }))
   }
-
 
   addMessageToState = (message) => {
     this.setState((prevState) => ({

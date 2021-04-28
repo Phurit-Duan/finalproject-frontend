@@ -13,12 +13,13 @@ const ImageUploadTHCash = (props) => {
   const ImageList = [{src: "", alt:""}];
   const [Image, setImage] = useState({ preview: "", raw: "" ,name: ""});
   const [showButton, setShowButton] = React.useState(true)
+  const [showButtons, setShowButtons] = React.useState(true)
 
   const ImageUpload = [
     {
-      text: "upload-button",
+      text: "upload-button-thcash",
       handler: props.actionProvider.createClientMesssage,
-      id: "upload-button",
+      id: "upload-button-thcash",
     }
   ];
 
@@ -54,6 +55,7 @@ const ImageUploadTHCash = (props) => {
   }
 
   const handleUpload = e => {
+    setShowButtons(false)
     e.preventDefault();
     const ClientMesssage = props.actionProvider.createClientMesssage("อัปโหลดรูปภาพ : "+Image.name)
     props.actionProvider.setClientMessage(ClientMesssage)
@@ -61,38 +63,46 @@ const ImageUploadTHCash = (props) => {
     formData.append("image", Image.raw);
     axios.post(`http://35.247.150.245:8000/buai-thaicash-process-image/`,formData)
     .then(res => {
-      var result= ""
-      for( var i in res.data.result) {
-        var string = res.data.result[i]
-        var spaces = string.search(" ");
-        var bath   = string.search("b");
-        var number = string.substr(0,spaces)
-        var Thcash = string.substr(spaces,bath-1)
-        console.log("Thcash "+Thcash)
-        console.log(number+" "+Thcash)
-        result += "ธนบัตร "+Thcash+" บาท จำนวน "+number+" ใบ"
-      }
-      ImageList.push({src: Image.raw, alt: Image.name})
-      props.actionProvider.handleBotAnswer("รูปนี้มี"+result)
+      console.log(res.data.result)
       setImage({preview: "", raw: "",name: ""});
+      var result= ""
+      if(res.data.result.length === 0)
+      {
+        props.actionProvider.handleBotAnswer("ไม่พบธนบัตรไทยในรูปภาพนี้")
+      }
+      else{
+        for( var i in res.data.result) {
+          var string = res.data.result[i]
+          var spaces = string.search(" ");
+          var bath   = string.search("b");
+          var number = string.substr(0,spaces)
+          var Thcash = string.substr(spaces,bath-1)
+          console.log("Thcash "+Thcash)
+          console.log(number+" "+Thcash)
+          result += "ธนบัตร "+Thcash+" บาท จำนวน "+number+" ใบ"
+        }
+        ImageList.push({src: Image.raw, alt: Image.name})
+        props.actionProvider.handleBotAnswer("รูปนี้มี"+result)
+      }
     })
     .catch((error) => {
+      setImage({preview: "", raw: "",name: ""});
       const clientMessage = props.actionProvider.createClientMesssage("เกิดข้อผิดพลาด ในการอัปโหลด")
       props.actionProvider.setClientMessage(clientMessage)
       props.actionProvider.handleBotAnswer("ไม่สามารถทำ Thai Cash Detection ได้")
-      setImage({preview: "", raw: "",name: ""});
+      
     })
   };
 
   const UploadPreview = () => (
     <div>
       <input 
-        id="upload-button" 
+        id="upload-button-thcash" 
         type="file" 
         style={{ display: "none" }}
         onChange={handleChange}
       />  
-      <label htmlFor="upload-button">
+      <label htmlFor="upload-button-thcash">
         <img src={UploadButton2} className="UploadButton" alt=""
         onMouseOver={(e) => (e.currentTarget.src = UploadButton1)}
         onMouseOut={(e) => (e.currentTarget.src = UploadButton2)}>   
@@ -126,7 +136,7 @@ const ImageUploadTHCash = (props) => {
         {Image.preview ? (
           <div className="ImagePreviewContainer">
             <img src={Image.preview} alt="" className="ImagePreview"/>
-            <div className="ImageButton"><ShowButtons/></div>
+            {showButtons ? <div className="ImageButton"><ShowButtons/></div> :null}
           </div> ) : null 
         }
       </div>
