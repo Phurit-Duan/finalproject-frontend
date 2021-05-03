@@ -111,7 +111,7 @@ function Classify (){
                 <h1 className="VisionInfoHead">Bakery Classification</h1>
                 <div className="VisionInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    คือ Feature ที่ใช้ Image Classification ในการจำแนกขนมเบเกอรี่ทั้งหมด
+                    คือ Image Classification ที่จำแนกขนมเบเกอรี่ทั้งหมด
                     6 ชนิด ได้แก่ ครัวซองต์ (Croissant), โดนัท (Doughnut), ฮอตดอก (Hot
                     dog), มัฟฟิน (Muffin), เค้ก (Cake) และพาย (Pie) ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
                 </div>
@@ -135,7 +135,7 @@ function Classify (){
             </div>
             <div className="Footer-V">
             <div className="Footer">
-                <h1>Supported by</h1>
+                <h1>Developed by</h1>
                 <p>- Faculty of Engineering, Bangkok University</p>
                 <div>- The icon "Magnify" is provided by <a href="https://loading.io/icon/" title="Freepik">loading.io</a></div>
                 <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

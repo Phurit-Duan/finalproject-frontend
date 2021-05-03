@@ -123,7 +123,7 @@ function Amulet (){
                 <h1 className="VisionInfoHead">Buddhist Amulet Classification</h1>
                 <div className="VisionInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    คือ Feature ที่ใช้ Image Classification ในการจำแนกพระเครื่องทั้งหมด 
+                    คือ Image Classification ที่จำแนกพระเครื่องทั้งหมด 
                     5 รุ่น ได้แก่ หลวงพ่อสุดเสือเผ่น 2559, หลวงพ่อสุดเสือเผ่น 2517, หลวงพ่อสุด
                     เสือเผ่น 2523, หลวงพ่อสุดเสือเผ่น 2521 และหลวงพ่อสุดเสือเผ่นน้อย  ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
                 </div>
@@ -148,7 +148,7 @@ function Amulet (){
             </div>
             <div className="Footer-V">
             <div className="Footer">
-                <h1>Supported by</h1>
+                <h1>Developed by</h1>
                 <p>- Faculty of Engineering, Bangkok University</p>
                 <div>- The icon "Magnify" is provided by <a href="https://loading.io/icon/" title="Freepik">loading.io</a></div>
                 <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
