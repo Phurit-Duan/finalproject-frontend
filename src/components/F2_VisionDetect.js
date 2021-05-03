@@ -126,7 +126,7 @@ function Detect (){
                 <h1 className="VisionInfoHead">Thai Cash Detection</h1>
                 <div className="VisionInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    คือ Feature ที่ใช้ Object Detection ในการตรวจจับธนบัตรไทย 
+                    คือ Object Detection ที่ตรวจจับธนบัตรไทย 
                     ได้แก่ ธนบัตร 20 บาท, ธนบัตร 50 บาท, ธนบัตร 100 บาท, ธนบัตร 
                     500 บาท และธนบัตร 1,000 บาท ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
                 </div>
@@ -151,7 +151,7 @@ function Detect (){
             </div>
             <div className="Footer-V">
             <div className="Footer">
-                <h1>Supported by</h1>
+                <h1>Developed by</h1>
                 <p>- Faculty of Engineering, Bangkok University</p>
                 <div>- The icon "Magnify" is provided by <a href="https://loading.io/icon/" title="Freepik">loading.io</a></div>
                 <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

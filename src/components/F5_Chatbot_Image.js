@@ -26,8 +26,8 @@ function ChatbotImage (){
                 <h1 className="ChatbotInfoHead">Sentiment Chatbot</h1>
                 <div className="ChatbotInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    คือ Feature ที่รวบรวมแต่ละ Feature เข้าไว้ด้วยกันโดยแสดงออกมาเป็นรูปแบบของ ChatBot มี Feature ดังนี้ Sentiment Chatbot,
-                    hai Cash Detection, Bakery Classification และ Buddhist Amulet Classification
+                    คือการรวบรวมทุกหัวข้อเข้าไว้ด้วยกันโดยแสดงออกมาเป็นรูปแบบของ ChatBot โดยมีหัวข้อดังนี้ Sentiment Chatbot,
+                    Thai Cash Detection, Bakery Classification และ Buddhist Amulet Classification
                 </div>
             </div>
             <Chatbot
@@ -38,7 +38,7 @@ function ChatbotImage (){
             />
             <div className="Footer-Ch">
             <div className="Footer">
-                <h1>Supported by</h1>
+                <h1>Developed by</h1>
                 <p>- Faculty of Engineering, Bangkok University</p>
                 <div>- The icon "Magnify" is provided by <a href="https://loading.io/icon/" title="Freepik">loading.io</a></div>
                 <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
