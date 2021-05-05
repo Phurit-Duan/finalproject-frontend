@@ -59,7 +59,7 @@ function Amulet (){
                 else if(res.data.result[no-1][0] === 'LPS23')
                     initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2523 : ${res.data.result[no-1][2]} %`)
                 else if(res.data.result[no-1][0] === 'LPS59')
-                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2529 : ${res.data.result[no-1][2]} %`)
+                    initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่น 2559 : ${res.data.result[no-1][2]} %`)
                 else if(res.data.result[no-1][0] === 'LPSN')
                     initialResult.push(`${no}. หลวงพ่อสุดเสือเผ่นน้อย : ${res.data.result[no-1][2]} %`)
             }

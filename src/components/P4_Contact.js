@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import "./MenuBar.css";
 import "./P4_Contact.css";
 
-import MenuImage from './images/Menu.png';
-import MenuImage_H from './images/Menu_H.png';
+import MenuImage from './images/Menu.svg';
+import MenuImage_H from './images/Menu_H.svg';
 import AboutDeveloper_1 from './images/About-Us-1.png';
 import AboutDeveloper_2 from './images/About-Us-2.png';
 import AboutDeveloper_3 from './images/About-Us-3.png';

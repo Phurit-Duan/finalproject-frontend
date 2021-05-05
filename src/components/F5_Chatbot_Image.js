@@ -23,7 +23,7 @@ function ChatbotImage (){
                 <p className="ChatbotLineH"></p>
             </div>
             <div className="ChatbotInfoContainer">
-                <h1 className="ChatbotInfoHead">Sentiment Chatbot</h1>
+                <h1 className="ChatbotInfoHead">Inclusive Chatbot</h1>
                 <div className="ChatbotInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     คือการรวบรวมทุกหัวข้อเข้าไว้ด้วยกันโดยแสดงออกมาเป็นรูปแบบของ ChatBot โดยมีหัวข้อดังนี้ Sentiment Chatbot,

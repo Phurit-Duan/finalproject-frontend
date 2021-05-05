@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./MenuBar.css";
 import "./P1_Home.css";
 import "./Footer.css";
-import MenuImage from "./images/Menu.png";
+import MenuImage from "./images/Menu.svg";
 import ClassifyLogo from "./images/Logo-Classify.svg";
 import DetectLogo from "./images/Logo-Detect.svg";
 import AmuletLogo from "./images/Logo-Amulet.svg";
@@ -50,7 +50,7 @@ function Home() {
         <div className="HomeConver">
           <Link to="/sentiment-chatbot" className="HomeChatbotText">
             <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
-            <p>Sentiment Chatbot</p>
+            <p>Sentiment Analysis Chatbot</p>
           </Link>
           <Link to="/inclusive-chatbot" className="HomeChatbotImage">
             <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
@@ -60,7 +60,7 @@ function Home() {
       </div>
       <div className="Footer-HD">
         <div className="Footer">
-          <h1>Supported by</h1>
+          <h1>Developed by</h1>
           <p>- Faculty of Engineering, Bangkok University</p>
           <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
