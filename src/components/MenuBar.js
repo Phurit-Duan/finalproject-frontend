@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import MenuImage from './images/Menu.png';
-import MenuImage_H from './images/Menu_H.png';
+import MenuImage from './images/Menu.svg';
+import MenuImage_H from './images/Menu_H.svg';
 import './MenuBar.css';
 
 

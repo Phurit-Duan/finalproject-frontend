@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import {Link} from "react-router-dom";
 
 import "./MenuBar.css";
@@ -8,8 +9,8 @@ import "./Footer.css";
 
 import Info_1 from "./images/Information_1.svg";
 import Info_2 from "./images/Information_2.svg";
-import MenuImage from './images/Menu.png';
-import MenuImage_H from './images/Menu_H.png';
+import MenuImage from './images/Menu.svg';
+import MenuImage_H from './images/Menu_H.svg';
 
 function Developer ()
 {
@@ -105,13 +106,13 @@ function Developer ()
                             </div>
                         </div>
                     </Popup>
-                    <h1>Sentiment Chatbot API : </h1>
+                    <h1>Sentiment Analysis Chatbot API : </h1>
                     <p>http://35.247.150.245:8000/buai-nlp-sentiment-chatbot/</p>
                 </div>
             </div>
             <div className="Footer-HD">
             <div className="Footer">
-                <h1>Supported by</h1>
+                <h1>Developed by</h1>
                 <p>- Faculty of Engineering, Bangkok University</p>
                 <div>- Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             </div>

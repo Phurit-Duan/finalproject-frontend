@@ -3,6 +3,7 @@
 }
 .HomeContainer{
     position: relative;
+    display: block;
 }
 .HomeApplication{
     position: relative;
@@ -127,6 +128,7 @@
 }
 .HomeConver{
     text-align: center;
+    display: block;
 }
 .HomeChatbotText{
     display: inline-block;

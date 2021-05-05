@@ -19,11 +19,11 @@ function ChatbotText (){
         <div>
             <MenuBar/>
             <div className="ChatbotHead">
-                <h1>Sentiment Chatbot</h1>
+                <h1>Sentiment Analysis Chatbot</h1>
                 <p className="ChatbotLineH"></p>
             </div>
             <div className="ChatbotInfoContainer">
-                <h1 className="ChatbotInfoHead">Sentiment Chatbot</h1>
+                <h1 className="ChatbotInfoHead">Sentiment Analysis Chatbot</h1>
                 <div className="ChatbotInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     คือ Natural Language Processing (NLP) ที่วิเคราะห์อารมณ์ของผู้ใช้จากข้อความ 
