@@ -19,15 +19,15 @@ function ChatbotText (){
         <div>
             <MenuBar/>
             <div className="ChatbotHead">
-                <h1>Sentiment Analysis Chatbot</h1>
+                <h1>Sentiment Chatbot</h1>
                 <p className="ChatbotLineH"></p>
             </div>
             <div className="ChatbotInfoContainer">
-                <h1 className="ChatbotInfoHead">Sentiment Analysis Chatbot</h1>
+                <h1 className="ChatbotInfoHead">Sentiment Chatbot</h1>
                 <div className="ChatbotInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    คือ Natural Language Processing (NLP) ที่วิเคราะห์อารมณ์ของผู้ใช้จากข้อความ 
-                    ซึ่งแบ่งเป็นทั้งหมด 3 อารมณ์ ได้แก่ อารมณ์ดี (Positive), อารมณ์ไม่ดี (์Negative) และปกติ (Neutral)
+                    คือ Natural Language Processing (NLP) ที่วิเคราะห์ความรู้สึกของผู้ใช้จากข้อความ 
+                    ซึ่งแบ่งเป็นทั้งหมด 3 ความรู้สึก ได้แก่ รู้สึกดี (Positive), รู้สึกไม่ดี (์Negative) และปกติ (Neutral)
                 </div>
             </div>
             <Chatbot

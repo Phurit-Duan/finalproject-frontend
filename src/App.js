@@ -21,7 +21,7 @@ function App ()
         <Route path="/sentiment-chatbot" component={ChatbotText} />
         <Route path="/inclusive-chatbot" component={ChatbotImage} />
         <Route path="/bakery-classification" component={Classify} />
-        <Route path="/thai-cash-detection" component={Detect} />
+        <Route path="/thai-banknotes-detection" component={Detect} />
         <Route path="/buddhist-amulet-classification" component={Amulet} />
     </div>
   );

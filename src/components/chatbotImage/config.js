@@ -7,9 +7,9 @@ const config = {
   state: {
     sentiment: false
   },
-  botName: "Inclusive Bot",
+  botName: "Multifunctional Bot",
   initialMessages: [
-    createChatBotMessage(`สวัสดีครับ ผมคือ Inclusive bot ที่มีทุกหัวข้อรวมอยู่ในตัว หากคุณต้องการใช้งานหัวข้อต่าง ๆ กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ อารมณ์`, {
+    createChatBotMessage(`สวัสดีครับ ผมคือ Multifunctional bot ที่มีทุกหัวข้อรวมอยู่ในตัว หากคุณต้องการใช้งานหัวข้อต่าง ๆ กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ ความรู้สึก`, {
     })
   ],
   widgets: [

@@ -32,7 +32,7 @@ function AboutUs ()
                 <p className="MenuContact">Contact</p>
             </Link>
             <div className="AboutHead">
-                <h1>Developer</h1>
+                <h1>Developers</h1>
                 <p className="AboutLineH"></p>
             </div>
             <div className="AboutDeveloper">

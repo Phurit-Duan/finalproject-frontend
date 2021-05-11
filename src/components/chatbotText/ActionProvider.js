@@ -9,17 +9,17 @@ class ActionProvider {
   handleBotAnswer = (answer) => {
     console.log(answer)
     if(answer === 'pos'){
-      const Sentiment = "คุณกำลังอารมณ์ดี (Positive)"
+      const Sentiment = "คุณกำลังรู้สึกดี (Positive)"
       const message = this.createChatBotMessage(Sentiment);
       this.addMessageToState(message);
     }
     else if(answer === 'neg'){
-      const Sentiment = "คุณกำลังอารมณ์ไม่ดี (Negative)"
+      const Sentiment = "คุณกำลังรู้สึกไม่ดี (Negative)"
       const message = this.createChatBotMessage(Sentiment);
       this.addMessageToState(message);
     }
     else if(answer === 'neu'){
-      const Sentiment = "อารมณ์ของคุณเป็นปกติ (Neutral)"
+      const Sentiment = "ความรู้สึกของคุณเป็นปกติ (Neutral)"
       const message = this.createChatBotMessage(Sentiment);
       this.addMessageToState(message);
     }

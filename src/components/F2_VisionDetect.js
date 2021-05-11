@@ -45,7 +45,7 @@ function Detect (){
         e.preventDefault();
         const formData = new FormData();
         formData.append("image", image.raw);
-        axios.post(`http://35.247.150.245:8000/buai-thaicash-process-image/`,formData)
+        axios.post(`http://35.247.150.245:8000/buai-banknotes-process-image/`,formData)
         .then(res => {
             console.log(res.data.result); 
             setShowLoading(false);
@@ -119,16 +119,16 @@ function Detect (){
         <div className="Container">
             <MenuBar/>
             <div className="VisionHead">
-                <h1>Thai Cash Detection</h1>
+                <h1>Thai Banknotes Detection</h1>
                 <p className="VisionLineH"></p>
             </div>
             <div className="VisionInfoContainer">
-                <h1 className="VisionInfoHead">Thai Cash Detection</h1>
+                <h1 className="VisionInfoHead">Thai Banknotes Detection</h1>
                 <div className="VisionInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     คือ Object Detection ที่ตรวจจับธนบัตรไทย 
                     ได้แก่ ธนบัตร 20 บาท, ธนบัตร 50 บาท, ธนบัตร 100 บาท, ธนบัตร 
-                    500 บาท และธนบัตร 1,000 บาท ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
+                    500 บาท และธนบัตร 1,000 บาท ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg .jpeg และ .png เท่านั้น
                 </div>
             </div>
             <div className="VisionContainer">
@@ -138,7 +138,8 @@ function Detect (){
                     type="file" 
                     id="upload-button" 
                     style={{ display: "none" }} 
-                    onChange={handleChange} >    
+                    onChange={handleChange}
+                    accept=".jpg,.jpeg,.png" >    
                 </input> 
                 {image.preview ? (
                     <img src={image.preview} alt="" className="VisionImagePreview" /> ) : 

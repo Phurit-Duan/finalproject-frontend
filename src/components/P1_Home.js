@@ -35,13 +35,12 @@ function Home() {
             <img src={ClassifyLogo} className="ClassifyLogo" alt="" />
             <p>Bakery Classification</p>
           </Link>
-          <Link to="/thai-cash-detection" className="HomeDetect">
+          <Link to="/thai-banknotes-detection" className="HomeDetect">
             <img src={DetectLogo} className="DetectLogo" alt="" />
-            <p>Thai Cash Detection</p>
+            <p>Thai Banknotes Detection</p>
           </Link>
           <Link to="/buddhist-amulet-classification" className="HomeAmulet">
             <img src={AmuletLogo} className="AmuletLogo" alt="" />
-            <p>Buddhist</p>
             <p>Amulet Classification</p>
           </Link>
         </div>
@@ -50,11 +49,11 @@ function Home() {
         <div className="HomeConver">
           <Link to="/sentiment-chatbot" className="HomeChatbotText">
             <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
-            <p>Sentiment Analysis Chatbot</p>
+            <p>Sentiment Chatbot</p>
           </Link>
           <Link to="/inclusive-chatbot" className="HomeChatbotImage">
             <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
-            <p>Inclusive Chatbot</p>
+            <p>Multifunctional Chatbot</p>
           </Link>
         </div>
       </div>

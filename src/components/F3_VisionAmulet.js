@@ -116,16 +116,16 @@ function Amulet (){
         <div>
             <MenuBar/>
             <div className="VisionHead">
-                <h1>Buddhist Amulet Classification</h1>
+                <h1>Amulet Classification</h1>
                 <p className="VisionLineH"></p>
             </div>
             <div className="VisionInfoContainer">
-                <h1 className="VisionInfoHead">Buddhist Amulet Classification</h1>
+                <h1 className="VisionInfoHead">Amulet Classification</h1>
                 <div className="VisionInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     คือ Image Classification ที่จำแนกพระเครื่องทั้งหมด 
                     5 รุ่น ได้แก่ หลวงพ่อสุดเสือเผ่น 2559, หลวงพ่อสุดเสือเผ่น 2517, หลวงพ่อสุด
-                    เสือเผ่น 2523, หลวงพ่อสุดเสือเผ่น 2521 และหลวงพ่อสุดเสือเผ่นน้อย  ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
+                    เสือเผ่น 2523, หลวงพ่อสุดเสือเผ่น 2521 และหลวงพ่อสุดเสือเผ่นน้อย  ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg .jpeg และ .png เท่านั้น
                 </div>
             </div>
             <div className="VisionContainer">
@@ -135,7 +135,8 @@ function Amulet (){
                     type="file" 
                     id="upload-button" 
                     style={{ display: "none" }} 
-                    onChange={handleChange} >    
+                    onChange={handleChange} 
+                    accept=".jpg,.jpeg,.png">    
                 </input> 
                 {image.preview ? (
                     <img src={image.preview} alt="" className="VisionImagePreview" /> ) : 
