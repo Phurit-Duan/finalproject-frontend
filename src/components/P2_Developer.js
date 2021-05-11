@@ -71,13 +71,13 @@ function Developer ()
                         </div>
                     </Popup>
                     <h1>Thai Cash Detection API : </h1>
-                    <p>http://35.247.150.245:8000/buai-thaicash-process-image/</p>
+                    <p>http://35.247.150.245:8000/buai-banknotes-process-image/</p>
                     <Popup trigger={<img src={Info_1} alt="" className="DeveloperInfoButton" 
                         onMouseOver={(e) => (e.currentTarget.src = Info_2)} 
                         onMouseOut ={(e) => (e.currentTarget.src = Info_1)}/>} 
                         position="right center">
                         <div className="DeveloperInfoContainer3">
-                            <h1 className="DeveloperInfoHead">Buddhist Amulet Classification API</h1>
+                            <h1 className="DeveloperInfoHead">Amulet Classification API</h1>
                             <div className="DeveloperInfoText">
                                 <h2>Request Data</h2>
                                 <p>Medthod&nbsp;&nbsp;:&nbsp;&nbsp;Post</p>
@@ -88,7 +88,7 @@ function Developer ()
                             </div>
                         </div>
                     </Popup>
-                    <h1>Buddhist Amulet Classification API : </h1>
+                    <h1>Amulet Classification API : </h1>
                     <p>http://35.247.150.245:8000/buai-amulet-process-image/</p>
                     <Popup trigger={<img src={Info_1} alt="" className="DeveloperInfoButton" 
                         onMouseOver={(e) => (e.currentTarget.src = Info_2)} 
@@ -106,7 +106,7 @@ function Developer ()
                             </div>
                         </div>
                     </Popup>
-                    <h1>Sentiment Analysis Chatbot API : </h1>
+                    <h1>Sentiment Chatbot API : </h1>
                     <p>http://35.247.150.245:8000/buai-nlp-sentiment-chatbot/</p>
                 </div>
             </div>

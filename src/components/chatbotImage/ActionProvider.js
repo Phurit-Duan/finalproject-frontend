@@ -17,8 +17,8 @@ class ActionProvider {
           this.handleBotFeatures(message)
           this.setStateSentiment(false)
         }
-        else if(message === 'อารมณ์'){
-          this.handleBotAnswer("คุณต้องการทำ Sentiment Analysis นะครับ กรุณาข้อความเพื่อวัดระดับอารมณ์ของคุณ และหากคุณต้องการกลับไปที่เมนู กรุณาพิมพ์ว่า กลับเมนู ")
+        else if(message === 'ความรู้สึก'){
+          this.handleBotAnswer("คุณต้องการทำ Sentiment นะครับ กรุณาข้อความเพื่อวัดระดับความรู้สึกของคุณ และหากคุณต้องการกลับไปที่เมนู กรุณาพิมพ์ว่า กลับเมนู ")
           
         }
         else{
@@ -28,7 +28,7 @@ class ActionProvider {
       }
       else{
         if(message === 'กลับเมนู'){
-          this.handleBotAnswer("คุณกลับมาเมนูของข้อความแล้ว ! กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ อารมณ์ เพื่อใช้งานหัวข้อต่าง ๆ")
+          this.handleBotAnswer("คุณกลับมาเมนูของข้อความแล้ว ! กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ ความรู้สึก เพื่อใช้งานหัวข้อต่าง ๆ")
           this.setStateSentiment(false)
         }
         else {
@@ -54,12 +54,12 @@ class ActionProvider {
       this.addMessageToState(message);
     }
     else if(text === 'ธนบัตรไทย'){
-      const message = this.createChatBotMessage("คุณต้องการทำ Thai Cash Detection นะครับ กรุณาอัปโหลดรูปภาพ",
+      const message = this.createChatBotMessage("คุณต้องการทำ Thai Banknotes Detection นะครับ กรุณาอัปโหลดรูปภาพ",
         {widget: "ImageUploadThCash"});
       this.addMessageToState(message);
     }
     else if(text === 'พระเครื่อง'){
-      const message = this.createChatBotMessage("คุณต้องการทำ Buddhist Amulet Classification นะครับ กรุณาอัปโหลดรูปภาพ",
+      const message = this.createChatBotMessage("คุณต้องการทำ Amulet Classification นะครับ กรุณาอัปโหลดรูปภาพ",
         {widget: "ImageUploadAmulet"});
       this.addMessageToState(message);
     }
@@ -67,17 +67,17 @@ class ActionProvider {
 
   handleBotSentiment = (answer) => {
     if(answer === 'pos'){
-      const Sentiment = "คุณกำลังอารมณ์ดี (Positive)"
+      const Sentiment = "คุณกำลังความรู้สึกดี (Positive)"
       const message = this.createChatBotMessage(Sentiment);
       this.addMessageToState(message);
     }
     else if(answer === 'neg'){
-      const Sentiment = "คุณกำลังอารมณ์ไม่ดี (Negative)"
+      const Sentiment = "คุณกำลังความรู้สึกไม่ดี (Negative)"
       const message = this.createChatBotMessage(Sentiment);
       this.addMessageToState(message);
     }
     else if(answer === 'neu'){
-      const Sentiment = "อารมณ์ของคุณเป็นปกติ (Neutral)"
+      const Sentiment = "ความรู้สึกของคุณเป็นปกติ (Neutral)"
       const message = this.createChatBotMessage(Sentiment);
       this.addMessageToState(message);
     }

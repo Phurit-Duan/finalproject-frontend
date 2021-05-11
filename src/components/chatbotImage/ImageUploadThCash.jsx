@@ -51,7 +51,7 @@ const ImageUploadTHCash = (props) => {
     setImage({preview: "", raw: "",name: ""})
     const ClientMesssage = props.actionProvider.createClientMesssage("ยกเลิก")
     props.actionProvider.setClientMessage(ClientMesssage)
-    props.actionProvider.handleBotAnswer("คุณได้ยกเลิกการทำ Thai Cash Detection แล้ว")
+    props.actionProvider.handleBotAnswer("คุณได้ยกเลิกการทำ Thai Banknotes Detection แล้ว")
   }
 
   const handleUpload = e => {
@@ -61,7 +61,7 @@ const ImageUploadTHCash = (props) => {
     props.actionProvider.setClientMessage(ClientMesssage)
     const formData = new FormData();
     formData.append("image", Image.raw);
-    axios.post(`http://35.247.150.245:8000/buai-thaicash-process-image/`,formData)
+    axios.post(`http://35.247.150.245:8000/buai-banknotes-process-image/`,formData)
     .then(res => {
       console.log(res.data.result)
       setImage({preview: "", raw: "",name: ""});
@@ -89,7 +89,7 @@ const ImageUploadTHCash = (props) => {
       setImage({preview: "", raw: "",name: ""});
       const clientMessage = props.actionProvider.createClientMesssage("เกิดข้อผิดพลาด ในการอัปโหลด")
       props.actionProvider.setClientMessage(clientMessage)
-      props.actionProvider.handleBotAnswer("ไม่สามารถทำ Thai Cash Detection ได้")
+      props.actionProvider.handleBotAnswer("ไม่สามารถทำ Thai Banknote Detection ได้")
       
     })
   };
@@ -101,6 +101,7 @@ const ImageUploadTHCash = (props) => {
         type="file" 
         style={{ display: "none" }}
         onChange={handleChange}
+        accept=".jpg,.jpeg,.png"
       />  
       <label htmlFor="upload-button-thcash">
         <img src={UploadButton2} className="UploadButton" alt=""
@@ -120,7 +121,7 @@ const ImageUploadTHCash = (props) => {
     setShowButton(false)
     const ClientMesssage = props.actionProvider.createClientMesssage("ยกเลิก")
     props.actionProvider.setClientMessage(ClientMesssage)
-    props.actionProvider.handleBotAnswer("คุณได้ยกเลิกการทำ Thai Cash Detection แล้ว")
+    props.actionProvider.handleBotAnswer("คุณได้ยกเลิกการทำ Thai Banknotes Detection แล้ว")
   }
   
   const buttonsMarkup = ImageUpload.map((option) => (

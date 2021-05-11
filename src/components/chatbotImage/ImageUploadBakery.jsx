@@ -83,6 +83,7 @@ const ImageUploadBakery = (props) => {
         type="file" 
         style={{ display: "none" }}
         onChange={handleChange}
+        accept=".jpg,.jpeg,.png"
       />  
       <label htmlFor="upload-button-bakery">
         <img src={UploadButton2} className="UploadButton" alt=""

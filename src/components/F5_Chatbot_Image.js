@@ -19,15 +19,15 @@ function ChatbotImage (){
         <div>
             <MenuBar/>
             <div className="ChatbotHead">
-                <h1>Inclusive Chatbot</h1>
+                <h1>Multifunctional Chatbot</h1>
                 <p className="ChatbotLineH"></p>
             </div>
             <div className="ChatbotInfoContainer">
-                <h1 className="ChatbotInfoHead">Inclusive Chatbot</h1>
+                <h1 className="ChatbotInfoHead">Multifunctional Chatbot</h1>
                 <div className="ChatbotInfoText">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     คือการรวบรวมทุกหัวข้อเข้าไว้ด้วยกันโดยแสดงออกมาเป็นรูปแบบของ ChatBot โดยมีหัวข้อดังนี้ Sentiment Chatbot,
-                    Thai Cash Detection, Bakery Classification และ Buddhist Amulet Classification
+                    Thai Banknotes Detection, Bakery Classification และ Amulet Classification
                 </div>
             </div>
             <Chatbot

@@ -113,7 +113,7 @@ function Classify (){
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     คือ Image Classification ที่จำแนกขนมเบเกอรี่ทั้งหมด
                     6 ชนิด ได้แก่ ครัวซองต์ (Croissant), โดนัท (Doughnut), ฮอตดอก (Hot
-                    dog), มัฟฟิน (Muffin), เค้ก (Cake) และพาย (Pie) ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg เท่านั้น
+                    dog), มัฟฟิน (Muffin), เค้ก (Cake) และพาย (Pie) ***การอัปโหลดรูปภาพ ใช้ได้เฉพาะกับนามสกุล .jpg .jpeg และ .png เท่านั้น
                 </div>
             </div>
             <div className="VisionContainer">
@@ -122,7 +122,8 @@ function Classify (){
                     type="file" 
                     id="upload-button" 
                     style={{ display: "none" }} 
-                    onChange={handleChange} >    
+                    onChange={handleChange} 
+                    accept=".jpg,.jpeg,.png">    
                 </input> 
                 {image.preview ? (
                     <img src={image.preview} alt="" className="VisionImagePreview" /> ) : 

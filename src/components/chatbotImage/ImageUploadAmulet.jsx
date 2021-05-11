@@ -51,7 +51,7 @@ const ImageUploadAmulet = (props) => {
     setImage({preview: "", raw: "",name: ""})
     const ClientMesssage = props.actionProvider.createClientMesssage("ยกเลิก")
     props.actionProvider.setClientMessage(ClientMesssage)
-    props.actionProvider.handleBotAnswer("คุณได้ยกเลิกการทำ Buddhist Amulet Classification แล้ว")
+    props.actionProvider.handleBotAnswer("คุณได้ยกเลิกการทำ Amulet Classification แล้ว")
   }
 
   const handleUpload = e => {
@@ -82,7 +82,7 @@ const ImageUploadAmulet = (props) => {
       setImage({preview: "", raw: "",name: ""});
       const clientMessage = props.actionProvider.createClientMesssage("เกิดข้อผิดพลาด")
       props.actionProvider.setClientMessage(clientMessage)
-      props.actionProvider.handleBotAnswer("ไม่สามารถทำ Buddhist Amulet Classification ได้")
+      props.actionProvider.handleBotAnswer("ไม่สามารถทำ Amulet Classification ได้")
     })
   };
 
@@ -93,6 +93,7 @@ const ImageUploadAmulet = (props) => {
         type="file" 
         style={{ display: "none" }}
         onChange={handleChange}
+        accept=".jpg,.jpeg,.png"
       />  
       <label htmlFor="upload-button-amulet">
         <img src={UploadButton2} className="UploadButton" alt=""
@@ -112,7 +113,7 @@ const ImageUploadAmulet = (props) => {
     setShowButton(false)
     const ClientMesssage = props.actionProvider.createClientMesssage("ยกเลิก")
     props.actionProvider.setClientMessage(ClientMesssage)
-    props.actionProvider.handleBotResponse("คุณได้ยกเลิกการทำ Buddhist Amulet Classification แล้ว")
+    props.actionProvider.handleBotResponse("คุณได้ยกเลิกการทำ Amulet Classification แล้ว")
   }
   
   const buttonsMarkup = ImageUpload.map((option) => (
