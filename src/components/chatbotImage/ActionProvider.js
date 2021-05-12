@@ -15,21 +15,21 @@ class ActionProvider {
       if (!state.sentiment) {
         if(message === 'เบเกอรี่' || message === 'ธนบัตรไทย' || message === 'พระเครื่อง'){
           this.handleBotFeatures(message)
-          this.setStateSentiment(false)
+          this.setStateSentiment(false);
         }
         else if(message === 'ความรู้สึก'){
           this.handleBotAnswer("คุณต้องการทำ Sentiment นะครับ กรุณาข้อความเพื่อวัดระดับความรู้สึกของคุณ และหากคุณต้องการกลับไปที่เมนู กรุณาพิมพ์ว่า กลับเมนู ")
-          this.setStateSentiment(true)
+          this.setStateSentiment(true);
         }
         else{
           this.handleBotAnswer("คุณพิมพ์ผิดหรือเปล่านะ ?")
-          this.setStateSentiment(false)
+          this.setStateSentiment(false);
         }
       }
       else{
         if(message === 'กลับเมนู'){
           this.handleBotAnswer("คุณกลับมาเมนูของข้อความแล้ว ! กรุณาพิมพ์ข้อความตามที่กำหนด ได้แก่ เบเกอรี่, ธนบัตรไทย, พระเครื่อง และ ความรู้สึก เพื่อใช้งานหัวข้อต่าง ๆ")
-          this.setStateSentiment(false)
+          this.setStateSentiment(false);
         }
         else {
           const formData = new FormData();
