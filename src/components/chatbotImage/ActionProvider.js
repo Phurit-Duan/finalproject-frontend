@@ -19,7 +19,7 @@ class ActionProvider {
         }
         else if(message === 'ความรู้สึก'){
           this.handleBotAnswer("คุณต้องการทำ Sentiment นะครับ กรุณาข้อความเพื่อวัดระดับความรู้สึกของคุณ และหากคุณต้องการกลับไปที่เมนู กรุณาพิมพ์ว่า กลับเมนู ")
-          
+          this.setStateSentiment(true)
         }
         else{
           this.handleBotAnswer("คุณพิมพ์ผิดหรือเปล่านะ ?")
