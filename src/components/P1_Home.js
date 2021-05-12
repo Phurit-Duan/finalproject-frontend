@@ -39,7 +39,7 @@ function Home() {
             <img src={DetectLogo} className="DetectLogo" alt="" />
             <p>Thai Banknotes Detection</p>
           </Link>
-          <Link to="/buddhist-amulet-classification" className="HomeAmulet">
+          <Link to="/amulet-classification" className="HomeAmulet">
             <img src={AmuletLogo} className="AmuletLogo" alt="" />
             <p>Amulet Classification</p>
           </Link>
@@ -51,7 +51,7 @@ function Home() {
             <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
             <p>Sentiment Chatbot</p>
           </Link>
-          <Link to="/inclusive-chatbot" className="HomeChatbotImage">
+          <Link to="/multifunctional-chatbot" className="HomeChatbotImage">
             <img src={ChatbotLogo} className="ChatbotLogo" alt="" />  
             <p>Multifunctional Chatbot</p>
           </Link>

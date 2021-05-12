@@ -19,10 +19,10 @@ function App ()
         <Route path="/about-us" component={AboutUs} />
         <Route path="/contact" component={Contact} />
         <Route path="/sentiment-chatbot" component={ChatbotText} />
-        <Route path="/inclusive-chatbot" component={ChatbotImage} />
+        <Route path="/multifunctional-chatbot" component={ChatbotImage} />
         <Route path="/bakery-classification" component={Classify} />
         <Route path="/thai-banknotes-detection" component={Detect} />
-        <Route path="/buddhist-amulet-classification" component={Amulet} />
+        <Route path="/amulet-classification" component={Amulet} />
     </div>
   );
 }
